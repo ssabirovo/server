@@ -1,0 +1,7 @@
+$bg-color: blue;
+
+.boxes {
+  display: grid;
+  place-items: center;
+  background: $bg-color;
+}

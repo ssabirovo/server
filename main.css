@@ -1,0 +1,18 @@
+.center {
+  display: grid;
+  place-items: center;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: blue;
+  display: grid;
+  place-items: center;
+}
+body h1 {
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

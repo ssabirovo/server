@@ -1,11 +1,15 @@
+@use 'mixins';
+@use 'fake';
+$bg-color: blue;
+
 body {
   margin: 0;
   height: 100vh;
-  background-color: #efed40;
-  display: grid;
-  place-items: center;
+  background-color: $bg-color;
+  @include mixins.center;
 
   h1 {
     font-size: 80px;
+    @include fake.center;
   }
 }

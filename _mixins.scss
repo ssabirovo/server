@@ -1,0 +1,11 @@
+$bg-color: yellow;
+
+@mixin center {
+  display: grid;
+  place-items: center;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
