@@ -1,18 +1,10 @@
------------ 4.03.22 ----------- (33)
+----------- 7.03.22 ----------- (34)
 
-1 -> Checking homeworks 👍🏻
+1 -> Checking homeworks
 
-2 -> Code Review 👍🏻
+2 -> Code Review
 
-3 -> Using [--help] command 👍🏻
-
-4 -> Partials 👍🏻
-      ✅ @import
-
-5 -> Modules 👍🏻
-      ✅ @use
-
-6 -> Practice
+3 -> Practice
 
 
 
