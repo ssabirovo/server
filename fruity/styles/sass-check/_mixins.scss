@@ -1,0 +1,29 @@
+%flex {
+  display: flex;
+}
+
+@mixin flex($direction: row, $alignItems: stretch, $justifyContent: stretch) {
+  flex-direction: $direction;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  @extend %flex;
+}
+
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%container {
+  padding: 0 8rem;
+
+  @media (max-width: 960px) {
+    padding: 0 4rem;
+  }
+}
+@mixin heroFlex {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}

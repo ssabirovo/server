@@ -1,0 +1,16 @@
+@use 'mixins';
+
+.header {
+  @extend %container;
+  .boxes {
+    @include mixins.flex(column, center, center);
+  }
+
+  .images {
+    @include mixins.flex;
+  }
+}
+
+.section {
+  @extend %container;
+}
