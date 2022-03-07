@@ -7,7 +7,4 @@ body {
 }
 body h1 {
   font-size: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
