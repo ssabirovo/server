@@ -1,0 +1,30 @@
+// colors
+$color-primary: #d3ab55;
+$color-secondary: #bbb;
+$color-black: #000;
+$color-white: #fff;
+$bg-color: #262626;
+
+// fonts
+$font-dancing-script: 'Dancing Script', cursive;
+$font-nunito: Nunito, sans-serif;
+$font-josefin: 'Josefin Sans', sans-serif;
+
+// mixins
+
+@mixin texting(
+  $fontFamily: $font-nunito,
+  $textTransform: initial,
+  $letterSpacing: 2px
+) {
+  font-family: $fontFamily;
+  text-transform: $textTransform;
+  letter-spacing: $letterSpacing;
+}
+
+// placeholder selectors
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
