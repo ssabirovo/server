@@ -1,3 +1,69 @@
+.hamburger-menu {
+  width: 100px * 1.61;
+  height: 100px;
+  // background-color: red;
+  @extend %flex-center;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 1s linear;
+  cursor: pointer;
+
+  &-line {
+    width: 100%;
+    height: 10px;
+    box-sizing: border-box;
+    background-color: $color-primary;
+    transition: 1s linear;
+    transform-origin: right;
+  }
+}
+
+// input[type='checkbox']:checked ~ .hamburger-menu {
+//   transform: rotate(90deg);
+// }
+input[type='checkbox']:checked ~ .hamburger-menu .hamburger-menu-line-one {
+  transform: rotate(-45deg);
+}
+input[type='checkbox']:checked ~ .hamburger-menu .hamburger-menu-line-two {
+  opacity: 0;
+}
+input[type='checkbox']:checked ~ .hamburger-menu .hamburger-menu-line-three {
+  transform: rotate(45deg);
+}
+
+.brand {
+  @extend %flex-center;
+
+  .logo {
+    color: $color-primary;
+    width: 110px;
+    height: 110px;
+    border: 3px solid $color-primary;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 70px;
+    @extend %flex-center;
+  }
+  .info {
+    @extend %flex-center;
+    flex-direction: column;
+    color: $color-secondary;
+
+    .main-name {
+      font-weight: 300;
+      font-size: 50px;
+      @include texting($font-nunito, uppercase);
+    }
+
+    .sub-name {
+      font-weight: 300;
+      font-size: 18px;
+      @include texting($font-josefin, uppercase);
+    }
+  }
+}
+
 .main-heading {
   font-size: 80px;
   font-weight: 300;
