@@ -1,12 +1,12 @@
----------- 9.03.22 ---------- (35)
+---------- 10.03.22 ---------- (36)
 
-1 -> Checking homeworks 👍🏻
+1 -> Checking homeworks
 
-2 -> Code Review 👍🏻
+2 -> Code Review
 
 3 -> Practice
        ✅ Restaurant
-            🎁 CSS Piper 👍🏻
+            🎁 CSS Piper
 
 
 
