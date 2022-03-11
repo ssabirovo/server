@@ -5,24 +5,29 @@
 2 -> Code Review
 
 3 -> SASS Data types
-       ✅ Numbers
-       ✅ Strings
-       ✅ Colors
-       ✅ Lists
-       ✅ Maps
+       ✅ Numbers 👍🏻
+       ✅ Strings 👍🏻
+       ✅ Colors 👍🏻
+       ✅ Lists 👍🏻
+       ✅ Maps 👍🏻
        ✅ Booleans
        ✅ Null
 
+       🎁 Modules 👍🏻
+          🔷 sass:math
+          🔷 sass:list
+          🔷 sass:color
+
 4 -> advanced at rules
        ✅ @forward
-       ✅ @content
+       ✅ @content 👍🏻
        ✅ @alias prefix
        ✅ auto prefix
 
 5 -> Flow control
-       ✅ If Else
-       ✅ Each loop
+       ✅ If Else 
+       ✅ Each loop 👍🏻
        ✅ For loop
 
-6 -> Create Bootstrap styles
+6 -> Create Bootstrap styles 👍🏻
 

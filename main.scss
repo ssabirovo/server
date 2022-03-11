@@ -1,10 +1,13 @@
-body {
-  margin: 0;
-  height: 100vh;
-  background-color: #efed40;
-  display: grid;
-  place-items: center;
-  h1 {
-    font-size: 80px;
+$margins: (
+  1: 0.325,
+  2: 0.5,
+  3: 1,
+  4: 2.5,
+  5: 3,
+);
+
+@each $key, $value in $margins {
+  .m-#{$key} {
+    margin: #{$value}rem;
   }
 }
