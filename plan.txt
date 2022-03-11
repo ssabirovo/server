@@ -1,13 +1,28 @@
----------- 10.03.22 ---------- (36)
+---------- 11.03.22 ---------- (37)
 
 1 -> Checking homeworks
 
 2 -> Code Review
 
-3 -> Practice
-       ✅ Restaurant
-            🎁 CSS Piper
+3 -> SASS Data types
+       ✅ Numbers
+       ✅ Strings
+       ✅ Colors
+       ✅ Lists
+       ✅ Maps
+       ✅ Booleans
+       ✅ Null
 
+4 -> advanced at rules
+       ✅ @forward
+       ✅ @content
+       ✅ @alias prefix
+       ✅ auto prefix
 
+5 -> Flow control
+       ✅ If Else
+       ✅ Each loop
+       ✅ For loop
 
+6 -> Create Bootstrap styles
 
