@@ -1,33 +1,24 @@
----------- 11.03.22 ---------- (37)
+---------- 14.03.22 ---------- (38)
 
 1 -> Checking homeworks
 
 2 -> Code Review
 
-3 -> SASS Data types
-       ✅ Numbers 👍🏻
-       ✅ Strings 👍🏻
-       ✅ Colors 👍🏻
-       ✅ Lists 👍🏻
-       ✅ Maps 👍🏻
-       ✅ Booleans
-       ✅ Null
-
-       🎁 Modules 👍🏻
-          🔷 sass:math
-          🔷 sass:list
-          🔷 sass:color
+3 -> Repeat last lesson
 
 4 -> advanced at rules
        ✅ @forward
-       ✅ @content 👍🏻
        ✅ @alias prefix
        ✅ auto prefix
 
 5 -> Flow control
-       ✅ If Else 
-       ✅ Each loop 👍🏻
+       ✅ If Else
+       ✅ Each loop
        ✅ For loop
 
-6 -> Create Bootstrap styles 👍🏻
+6 -> SASS Folder Structure
+
+7 -> Practice
+       ✅ Clothes Store App
+            🔗 https://practice-clothes-store.netlify.app/
 
