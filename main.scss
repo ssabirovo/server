@@ -1,3 +1,6 @@
+@use 'sass:math';
+@use 'sass:string';
+@import 'mixins';
 body {
   margin: 0;
   background-color: blue;
@@ -6,5 +9,34 @@ body {
 
   h1 {
     font-size: 80px;
+    font-family: monospace;
   }
+}
+
+.header {
+  @include _media(xl) {
+    display: flex;
+    font-family: xl;
+  }
+  @include _media(lg) {
+    display: flex;
+    font-family: lg;
+  }
+}
+
+// xl
+@media (max-width: 1200px) {
+  // ....
+}
+// lg
+@media (max-width: 992px) {
+  // ....
+}
+// md
+@media (max-width: 768px) {
+  // ....
+}
+// sm
+@media (max-width: 576px) {
+  // ....
 }
