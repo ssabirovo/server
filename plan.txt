@@ -4,21 +4,19 @@
 
 2 -> Code Review
 
-3 -> Repeat last lesson
-
-4 -> advanced at rules
-       ✅ @forward
+2 -> advanced at rules
+       ✅ @forward 👍🏻
        ✅ @alias prefix
        ✅ auto prefix
 
-5 -> Flow control
+3 -> Flow control
        ✅ If Else
        ✅ Each loop
        ✅ For loop
 
-6 -> SASS Folder Structure
+4 -> SASS Folder Structure
 
-7 -> Practice
+5 -> Practice
        ✅ Clothes Store App
             🔗 https://practice-clothes-store.netlify.app/
 
