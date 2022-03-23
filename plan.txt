@@ -1,9 +1,9 @@
----------- 18.03.22 ---------- (41)
+---------- 24.03.22 ---------- (42)
 
 1 -> Checking homeworks
 
 2 -> Code Review
 
-3 -> TRELLO
+3 -> Explain Bootstrap Course
 
 4 -> Github
