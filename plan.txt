@@ -1,9 +1,9 @@
 ---------- 25.03.22 ---------- (43)
 
 -------- Bootstrap --------
-1 -> CARD
-2 -> CAROUSEL
-3 -> COLLAPSE
+1 -> CARD 👍🏻
+2 -> CAROUSEL 👍🏻
+3 -> COLLAPSE 👍🏻
 4 -> NAVBAR
 5 -> Practice
   ✅ https://www.frontendbootcampdemo.com/
