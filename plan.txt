@@ -1,9 +1,9 @@
----------- 24.03.22 ---------- (42)
+---------- 25.03.22 ---------- (43)
 
-1 -> Checking homeworks 👍🏻
-
-2 -> Code Review (Muhammaddiyor) 👍🏻
-
-3 -> Explain Bootstrap Course
-
-4 -> Learning Bootstrap
+-------- Bootstrap --------
+1 -> CARD
+2 -> CAROUSEL
+3 -> COLLAPSE
+4 -> NAVBAR
+5 -> Practice
+  ✅ https://www.frontendbootcampdemo.com/
