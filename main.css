@@ -5,19 +5,3 @@ body {
   /* display: grid;
   place-items: center; */
 }
-
-/* CARD SECTION */
-/* .card {
-  height: 200px;
-  border: 20px solid yellow;
-} */
-
-.card {
-  width: 300px;
-}
-
-input::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-  content: "---";
-  cursor: pointer;
-}
