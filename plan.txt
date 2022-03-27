@@ -1,11 +1,11 @@
 ---------- 26.03.22 ---------- (44)
 
 -------- Bootstrap --------
-1 -> NAVBAR
-2 -> Dropdowns
-3 -> Offcanvas
-4 -> Pagination
-5 -> Placeholder
-6 -> Modal
+1 -> NAVBAR 👍🏻
+2 -> Dropdowns 👍🏻
+3 -> Offcanvas 
+4 -> Pagination 👍🏻
+5 -> Placeholder 👍🏻
+6 -> Modal 👍🏻
 7 -> Practice
   ✅ https://www.frontendbootcampdemo.com/
