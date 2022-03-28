@@ -1,0 +1,5 @@
+@import "abstracts";
+
+form {
+  @include size(200px, 400px);
+}

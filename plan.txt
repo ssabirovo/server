@@ -1,6 +1,11 @@
 ---------- 28.03.22 ---------- (45)
 
--------- Bootstrap --------
-✅
 -------- SASS --------
-✅
+    ✅ SASS folder structure
+    ✅ SASS guideline
+       🔗 https://sass-guidelin.es/
+    ✅ Build project with custom SASS folder structure
+       🔗 https://www.figma.com/file/6vLCZnDbs0Zvh3vjLGe098/PDP-18?node-id=5206%3A136
+
+-------- Bootstrap --------
+✅ others...
