@@ -1,0 +1,8 @@
+@import "base";
+@import "abstracts";
+@use "components";
+
+.auth {
+  display: flex;
+  @include components.modal
+}
