@@ -1,59 +1,57 @@
 ---------- 30.03.22 ---------- (47)
-#1 -> What is JavaScript ?
+#1 -> What is JavaScript ? 👍🏻
         ✅ https://betterprogramming.pub/what-makes-javascript-javascript-b9ab51ad983a
         ✅ https://insights.stackoverflow.com/survey/2021#key-territories-all-countries
 
 #2 -> What can you do with it ?
-        ✅ Web Apps
-        ✅ Mobile Apps
-        ✅ Desktop Apps
-        ✅ Machine Learning
-        ✅ Games || example: https://bruno-simon.com/
+        ✅ Web Apps   👍🏻
+        ✅ Mobile Apps 👍🏻
+        ✅ Desktop Apps 👍🏻
+        ✅ Machine Learning 👍🏻
+        ✅ Games || example: https://bruno-simon.com/ 👍🏻
 
-#3 -> Where does JavaScript code run ?
+#3 -> Where does JavaScript code run ? 👍🏻
         ✅ JavaScript Engine
               🎁 FireFox -> "SpiderMonkey"
               🎁 Google -> "V8"
         ✅ Node Js -> 2009
         ✅ Deno Js -> 2020
 
-#4 -> JavaScript vs ECMAScript ?
+#4 -> JavaScript vs ECMAScript ? 👍🏻
         JS -> Programming Language
         ECMAScript (ES6) -> Specification
 
-#5 -> Setup Development Environment
+#5 -> Setup Development Environment 👍🏻
         ✅ Installing Visual Studio Code (VSCode) || https://code.visualstudio.com/download
         ✅ Installing Node Js  || https://nodejs.org/en/download/
 
 #6 -> Simple Example
-        ✅ JavaScript in Browser
-        ✅ JavaScript in Node
+        ✅ JavaScript in Browser 👍🏻
+        ✅ JavaScript in Node 👍🏻
 
 ================ Basics ================
 
 #7 -> Variables
         ✅ Variable creation rules and tips
-            🎁 JavaScript keywordlari !
-            🎁 Manosiz sozlar
-            🎁 Raqamlar !
-            🎁 belgilar !
-            🎁 camelCase
-#8 -> Constants
-#9 -> Primitive types
+            🎁 JavaScript keywordlari ! 👍🏻
+            🎁 Manosiz sozlar 👍🏻
+            🎁 Raqamlar ! 👍🏻
+            🎁 belgilar [$,_] ! 👍🏻
+            🎁 camelCase 👍🏻
+#8 -> Constants 👍🏻
+#9 -> Primitive types 👍🏻
         ✅ string
         ✅ number
         ✅ boolean
         ✅ null
         ✅ undefined
 
+#9.1 -> null vs undefined 👎🏻
 #10 -> Reference types
-        ✅ Object
-        ✅ Array
+        ✅ Object 👍🏻
+        ✅ Array 👍🏻
         ✅ Function
 
-#11 -> Object type
+#11 -> Object type 👍🏻
         ✅ Dot Notation
         ✅ Bracket Notation
-#12 -> Array type
-#13 -> Functions
-#14 -> Types of Functions
