@@ -1,20 +1,22 @@
 ---------- 01.04.22 ---------- (48)
 
-#1 -> typeof keyword
-#2 -> Array
-#3 -> Function
+#1 -> typeof keyword 👍🏻
+#2 -> Array 👍🏻
+#3 -> Function 👍🏻
 ============ Operators ============
-#4 -> Arithmetic Operators
+#4 -> Arithmetic Operators 👍🏻
         ✅ [+] [-] [*] [/] [%] [**]
 
-#5 -> Assignment operators
-        ✅ Increment
-        ✅ Decrement
+#5 -> Assignment operators 👍🏻
+        ✅ Increment [++]
+        ✅ Decrement [--]
 
-#6 -> Comparison  operators
-        ✅ [>] [<] [>=] [<=] [%] [**]
+#6 -> Comparison  operators 👍🏻
+        ✅ [>] [<] [>=] [<=]
 
-#7 -> Equality operators
+#7 -> Equality operators 👍🏻
+        ✅ [==] [===] [!=] [!==]
+
 #8 -> Logical operators
         ✅ &&
         ✅ ||
