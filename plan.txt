@@ -1,57 +1,32 @@
----------- 30.03.22 ---------- (47)
-#1 -> What is JavaScript ? 👍🏻
-        ✅ https://betterprogramming.pub/what-makes-javascript-javascript-b9ab51ad983a
-        ✅ https://insights.stackoverflow.com/survey/2021#key-territories-all-countries
+---------- 01.04.22 ---------- (48)
 
-#2 -> What can you do with it ?
-        ✅ Web Apps   👍🏻
-        ✅ Mobile Apps 👍🏻
-        ✅ Desktop Apps 👍🏻
-        ✅ Machine Learning 👍🏻
-        ✅ Games || example: https://bruno-simon.com/ 👍🏻
+#1 -> typeof keyword
+#2 -> Array
+#3 -> Function
+============ Operators ============
+#4 -> Arithmetic Operators
+        ✅ [+] [-] [*] [/] [%] [**]
 
-#3 -> Where does JavaScript code run ? 👍🏻
-        ✅ JavaScript Engine
-              🎁 FireFox -> "SpiderMonkey"
-              🎁 Google -> "V8"
-        ✅ Node Js -> 2009
-        ✅ Deno Js -> 2020
+#5 -> Assignment operators
+        ✅ Increment
+        ✅ Decrement
 
-#4 -> JavaScript vs ECMAScript ? 👍🏻
-        JS -> Programming Language
-        ECMAScript (ES6) -> Specification
+#6 -> Comparison  operators
+        ✅ [>] [<] [>=] [<=] [%] [**]
 
-#5 -> Setup Development Environment 👍🏻
-        ✅ Installing Visual Studio Code (VSCode) || https://code.visualstudio.com/download
-        ✅ Installing Node Js  || https://nodejs.org/en/download/
+#7 -> Equality operators
+#8 -> Logical operators
+        ✅ &&
+        ✅ ||
+        ✅ !
+#9 -> Logical operators with non-boolean
+        ✅ Falsy
+            🎁 undefined
+            🎁 null
+            🎁 0
+            🎁 false
+            🎁 ''
+            🎁 NAN -> not a number
+        ✅ Truthy
 
-#6 -> Simple Example
-        ✅ JavaScript in Browser 👍🏻
-        ✅ JavaScript in Node 👍🏻
-
-================ Basics ================
-
-#7 -> Variables
-        ✅ Variable creation rules and tips
-            🎁 JavaScript keywordlari ! 👍🏻
-            🎁 Manosiz sozlar 👍🏻
-            🎁 Raqamlar ! 👍🏻
-            🎁 belgilar [$,_] ! 👍🏻
-            🎁 camelCase 👍🏻
-#8 -> Constants 👍🏻
-#9 -> Primitive types 👍🏻
-        ✅ string
-        ✅ number
-        ✅ boolean
-        ✅ null
-        ✅ undefined
-
-#9.1 -> null vs undefined 👎🏻
-#10 -> Reference types
-        ✅ Object 👍🏻
-        ✅ Array 👍🏻
-        ✅ Function
-
-#11 -> Object type 👍🏻
-        ✅ Dot Notation
-        ✅ Bracket Notation
+#10 -> String and template literals
