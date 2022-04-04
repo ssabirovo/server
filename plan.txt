@@ -1,3 +1,13 @@
 ---------- 04.04.22 ---------- (49)
 
-#1 ->
+#-1 -> Checking Homeworks
+#0 -> Code Review
+#1 -> Type conversion
+#2 -> Type coercion
+#3 -> Truthy and falsy values
+#4 -> Equality Operators == vs. ===
+       ✅ prompt
+#5 -> Switch statement
+#6 -> Statements and Expressions
+#7 -> The conditional(Ternary) Operator
+#8 -> Practice
