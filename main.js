@@ -127,16 +127,16 @@
 //   bigUser = false;
 // }
 
-let age = 40;
-let userData = age > 20 ? "Katta" : "kichik";
-// let userData = getData(age);
+// let age = 40;
+// let userData = age > 20 ? "Katta" : "kichik";
+// // let userData = getData(age);
 
-console.log("userData = ", userData);
+// console.log("userData = ", userData);
 
-function getData(age) {
-  if (age > 20) {
-    return "Katta";
-  } else {
-    return "Kichik";
-  }
-}
+// function getData(age) {
+//   if (age > 20) {
+//     return "Katta";
+//   } else {
+//     return "Kichik";
+//   }
+// }
