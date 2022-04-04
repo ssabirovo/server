@@ -6,8 +6,8 @@
 #2 -> Type coercion 👍🏻
 #3 -> Truthy and falsy values 👍🏻
 #4 -> Equality Operators == vs. ===
-       ✅ prompt
-#5 -> Switch statement
-#6 -> Statements and Expressions
-#7 -> The conditional(Ternary) Operator
+       ✅ prompt 👍🏻
+#5 -> Switch statement 👍🏻
+#6 -> Statements and Expressions 👍🏻
+#7 -> The conditional(Ternary) Operator 👍🏻
 #8 -> Practice
