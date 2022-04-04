@@ -1,0 +1,42 @@
+* {
+  font-family: monospace;
+  transition: 0.3s linear all;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1.title {
+  font-size: 80px;
+}
+
+.boxes {
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.box {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 40px;
+  transition: 0.1s linear transform;
+}
+
+.box:active {
+  transform: scale(0.95);
+}
