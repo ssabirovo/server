@@ -1,6 +1,0 @@
-#1 -> style and html structure  👍🏻
-#2 -> select elements 👍🏻
-#3 -> create randomColor function 👍🏻
-#4 -> add events 👍🏻
-#5 -> create logic for change function 👍🏻
-#6 -> code refactoring 👍🏻

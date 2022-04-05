@@ -4,7 +4,8 @@
 #2 -> Code Review
 #3 -> History of Javascript
 #4 -> "DON'T BREAK THE WEB"
-#5 ->
+#5 -> Use Strict mode
+       ✅ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 #6 ->
 #7 ->
 #8 ->
