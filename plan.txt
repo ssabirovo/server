@@ -6,7 +6,4 @@
 #4 -> "DON'T BREAK THE WEB"
 #5 -> Use Strict mode
        ✅ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
-#6 ->
-#7 ->
-#8 ->
-#9 -> Practice
+#6 -> Practice
