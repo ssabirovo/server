@@ -1,15 +1,16 @@
 ---------- 06.04.22 ---------- (51)
 
 #1 -> Functions
-       🎁 Declaration
-       🎁 Scope
+       🎁 Declaration 👍🏻
+       🎁 Scope 👍🏻
             ✅ calling
             ✅ running
             ✅ invoking function
-       🎁 Parameters
-       🎁 Returning
-       🎁 Function call into function
-#2 -> Arrays
+       🎁 Parameters 👍🏻
+       🎁 Returning 👍🏻
+       🎁 Function call into function 👍🏻
+
+#2 -> Arrays 
        🎁 Declaration
        🎁 Get value
        🎁 Set value
