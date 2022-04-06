@@ -1,9 +1,33 @@
----------- 05.04.22 ---------- (50)
+---------- 06.04.22 ---------- (51)
 
-#1 -> Checking Homeworks
-#2 -> Code Review
-#3 -> History of Javascript
-#4 -> "DON'T BREAK THE WEB"
-#5 -> Use Strict mode
-       ✅ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
-#6 -> Practice
+#1 -> Functions
+       🎁 Declaration
+       🎁 Scope
+            ✅ calling
+            ✅ running
+            ✅ invoking function
+       🎁 Parameters
+       🎁 Returning
+       🎁 Function call into function
+#2 -> Arrays
+       🎁 Declaration
+       🎁 Get value
+       🎁 Set value
+       🎁 Multi values
+
+#3 -> For Loop
+       🎁 For Structure
+            for(initialization, condition, increment)
+       🎁 Loop Breaking and Continue
+       🎁 Backwards Loop
+       🎁 Loops in Loops
+
+#4 -> While and DoWhile loop
+       🎁 For Structure
+            ✅ while(condition) {}
+            ✅ do {} while (condition);
+
+#5 -> String
+
+#6 -> Coding challenge
+       🎁 https://the-winter.github.io/codingjs/
