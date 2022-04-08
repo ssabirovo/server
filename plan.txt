@@ -1,4 +1,5 @@
----------- 08.04.22 ---------- (53)
+---------- 09.04.22 ---------- (54)
 
  #1 -> Checking homework
- #2 -> Coding Js
+ #2 -> String Methods
+ #3 -> Coding Js Challenges
