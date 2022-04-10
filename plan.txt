@@ -1,23 +1,10 @@
----------- 09.04.22 ---------- (54)
+---------- 11.04.22 ---------- (55)
 
  #1 -> Checking homework
  #2 -> String Methods
-        ✅ charAt
-        ✅ charCodeAt
-        ✅ concat
-        ✅ endsWith
-        ✅ includes
-        ✅ indexOf
-        ✅ lastIndexOf
-        ✅ match
         ✅ repeat
         ✅ replace
         ✅ search
         ✅ slice
         ✅ split
-        ✅ startsWith
-        ✅ substr
-        ✅ substring
-        ✅ toLowerCase
-        ✅ toUpperCase
  #3 -> Coding Js Challenges
