@@ -1,4 +1,4 @@
 ---------- 12.04.22 ---------- (56)
 
- #1 -> Checking homework 👍🏻
- #2 -> Coding Js Challenges 👍🏻
+ #1 -> Checking homework
+ #2 -> Coding Js Challenges
