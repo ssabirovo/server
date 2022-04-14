@@ -14,6 +14,7 @@ function maxBlock(str = "hoopla") {
   if (maxValue === 0) return 0;
   return currentCounter < maxValue ? maxValue : currentCounter;
 }
+
 console.log(maxBlock("hoopla"));
 /**
  *        012345
