@@ -12,4 +12,5 @@
 
 ------- PROBLEMS -------
 #1 -> https://leetcode.com/problems/group-anagrams/
-#2 ->
+#2 -> https://leetcode.com/problems/word-break/
+#3 -> https://leetcode.com/problems/additive-number/
