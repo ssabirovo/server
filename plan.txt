@@ -1,16 +1,5 @@
----------- 15.04.22 ---------- (59)
-
------------ Arrays -----------
-#1 -> Simple array examples 👍🏻
-      ✅ nodemon js
-#2 -> What is callback function 👍🏻
-#3 -> Array Methods
-      ✅ forEach 👍🏻
-      ✅ map 👍🏻
-      ✅ filter
-      ✅ find
+---------- 18.04.22 ---------- (60)
 
 ------- PROBLEMS -------
 #1 -> https://leetcode.com/problems/group-anagrams/
 #2 -> https://leetcode.com/problems/word-break/
-#3 -> https://leetcode.com/problems/additive-number/
