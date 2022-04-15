@@ -1,4 +1,14 @@
 ---------- 15.04.22 ---------- (59)
 
- #1 -> Checking homework
- #2 -> Coding Js Challenges
+----------- Arrays -----------
+#1 -> Simple array examples
+#2 -> What is callback function
+#3 -> Array Methods
+      ✅ forEach
+      ✅ map
+      ✅ filter
+      ✅ find
+
+------- PROBLEMS -------
+#1 -> https://leetcode.com/problems/group-anagrams/
+#2 ->
