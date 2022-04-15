@@ -1,11 +1,12 @@
 ---------- 15.04.22 ---------- (59)
 
 ----------- Arrays -----------
-#1 -> Simple array examples
-#2 -> What is callback function
+#1 -> Simple array examples 👍🏻
+      ✅ nodemon js
+#2 -> What is callback function 👍🏻
 #3 -> Array Methods
-      ✅ forEach
-      ✅ map
+      ✅ forEach 👍🏻
+      ✅ map 👍🏻
       ✅ filter
       ✅ find
 
