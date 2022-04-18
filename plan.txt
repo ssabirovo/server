@@ -1,23 +1,23 @@
 ---------- 18.04.22 ---------- (60)
 
 ------- Array methods --------
---- Add Elements ---
-#1 -> Push
-#2 -> Unshift
+--- Add Elements --- 👍🏻
+#1 -> Push - "orqadan qoshadi"
+#2 -> Unshift - "oldidan qoshadi"
 
---- Remove Elements ---
-#3 -> Pop
-#4 -> Shift
+--- Remove Elements --- 👍🏻
+#3 -> Pop - "orqadan ochiradi"
+#4 -> Shift - "oldidan ochiradi"
 
---- Clone Array ---
+--- Clone Array --- 👍🏻
 #5 -> Slice
 #6 -> Spreat [...]
 
 --- Array other methods ---
-#7 -> Array.isArray();
-#8 -> Concat
-#9 -> Join
-#10 -> Fill
+#7 -> Array.isArray(); 👍🏻
+#8 -> Concat 👍🏻
+#9 -> Join 👍🏻
+#10 -> Fill 👍🏻
 
 ------- PROBLEMS -------
 #1 -> https://leetcode.com/problems/group-anagrams
