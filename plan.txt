@@ -1,5 +1,26 @@
 ---------- 18.04.22 ---------- (60)
 
+------- Array methods --------
+--- Add Elements ---
+#1 -> Push
+#2 -> Unshift
+
+--- Remove Elements ---
+#3 -> Pop
+#4 -> Shift
+
+--- Clone Array ---
+#5 -> Slice
+#6 -> Spreat [...]
+
+--- Array other methods ---
+#7 -> Array.isArray();
+#8 -> Concat
+#9 -> Join
+#10 -> Fill
+
 ------- PROBLEMS -------
 #1 -> https://leetcode.com/problems/group-anagrams/
 #2 -> https://leetcode.com/problems/word-break/
+
+
