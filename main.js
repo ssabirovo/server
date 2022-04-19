@@ -60,27 +60,37 @@ const users = [
   },
   {
     age: 18,
-    firstName: "arslonbek",
+    firstName: "ali",
     phoneNumber: "+998991234567",
   },
   {
     age: 11,
-    firstName: "arslonbek",
+    firstName: "jamshid",
     phoneNumber: "+998991234567",
   },
   {
     age: 75,
-    firstName: "arslonbek",
+    firstName: "ilyos",
     phoneNumber: "+998991234567",
   },
   {
     age: 96,
-    firstName: "arslonbek",
+    firstName: "bobur",
     phoneNumber: "+998991234567",
   },
   {
     age: 36,
-    firstName: "arslonbek",
+    firstName: "nodir",
+    phoneNumber: "+998991234567",
+  },
+  {
+    age: 75,
+    firstName: "jasur",
+    phoneNumber: "+998991234567",
+  },
+  {
+    age: 36,
+    firstName: "arslon",
     phoneNumber: "+998991234567",
   },
 ];
