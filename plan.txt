@@ -4,7 +4,7 @@
 1 -> sort
 2 -> splice
 ------- Array static methods -------
-3 -> Array.isArray
+3 -> Array.isArray 👍🏻
 4 -> Array.from
 5 -> Array.of
 ------- Array iteration methods -------
