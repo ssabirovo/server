@@ -46,12 +46,6 @@ const items = ["🍅", "🍄", "🥦", "🥕", "🥒", "🌽", "🥑"];
 // charts.sort();
 // console.log(charts);
 
-const user = {
-  age: 20,
-  firstName: "arslonbek",
-  phoneNumber: "+998991234567",
-};
-
 const users = [
   {
     age: 22,
@@ -68,11 +62,7 @@ const users = [
     firstName: "jamshid",
     phoneNumber: "+998991234567",
   },
-  {
-    age: 75,
-    firstName: "ilyos",
-    phoneNumber: "+998991234567",
-  },
+
   {
     age: 96,
     firstName: "bobur",
@@ -89,8 +79,35 @@ const users = [
     phoneNumber: "+998991234567",
   },
   {
+    age: 75,
+    firstName: "ilyos",
+    phoneNumber: "+998991234567",
+  },
+  {
+    age: 75,
+    firstName: "abdulloh",
+    phoneNumber: "+998991234567",
+  },
+  {
     age: 36,
     firstName: "arslon",
     phoneNumber: "+998991234567",
   },
+  {
+    age: 36,
+    firstName: "abror",
+    phoneNumber: "+998991234567",
+  },
 ];
+
+function comFn(userOne, userTwo) {
+  if (userOne.age === userTwo.age) {
+    if (userOne.firstName > userTwo.firstName) {
+      return 1;
+    } else return -1;
+  }
+  if (userOne.age > userTwo.age) return 1;
+  else if (userOne.age < userTwo.age) return -1;
+}
+users.sort(comFn);
+console.log(users);
