@@ -1,16 +1,11 @@
 ---------- 21.04.22 ---------- (62)
 
 ------- Array methods --------
-1 -> sort 👍🏻
-2 -> splice
-------- Array static methods -------
-3 -> Array.isArray 👍🏻
-4 -> Array.from 👍🏻
-5 -> Array.of 👍🏻
+1 -> splice
 ------- Array iteration methods -------
-6 -> filter
-7 -> map
-8 -> forEach
-9 -> find
-10 -> findIndex
-11 -> reduce
+2 -> filter
+3 -> map
+4 -> forEach
+5 -> find
+6 -> findIndex
+7 -> reduce
