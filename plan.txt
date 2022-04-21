@@ -3,9 +3,9 @@
 ------- Array methods --------
 1 -> splice 👍🏻
 ------- Array iteration methods -------
-2 -> filter
-3 -> map
-4 -> forEach
-5 -> find
-6 -> findIndex
+2 -> filter 👍🏻
+3 -> map 👍🏻
+4 -> forEach 👍🏻
+5 -> find 👍🏻
+6 -> findIndex 👍🏻
 7 -> reduce
