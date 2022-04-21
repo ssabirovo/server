@@ -1,5 +1,5 @@
 "use strict";
-const fruitsContainer = document.getElementById("fruits_container");
+// const fruitsContainer = document.getElementById("fruits_container");
 const items = ["🍅", "🍄", "🥦", "🥕", "🥒", "🌽", "🥑"];
 
 // function renderFruits(fruits = []) {
@@ -123,7 +123,7 @@ const items = ["🍅", "🍄", "🥦", "🥕", "🥒", "🌽", "🥑"];
 
 // console.log(customSearch("bek"));
 
-let numbers = [4, 2, 3, 4, 5, 6, 7, 8, 9];
+// let numbers = [4, 2, 3, 4, 5, 6, 7, 8, 9];
 // let sum = 0;
 // for (let i = 0; i < numbers.length; i++) {}
 // console.log("sum = ", sum);
@@ -148,9 +148,13 @@ let numbers = [4, 2, 3, 4, 5, 6, 7, 8, 9];
  * acc = 48, cur = undefined
  */
 
-const list = items.reduce(function (acc, cur) {
-  return acc + `<li>${cur}</li>`;
-}, "");
+// fruitsContainer.innerHTML = items.reduce(
+//   (acc, cur) => `${acc}<li>${cur}</li>`,
+//   ""
+// );
 
-console.log("list = ", list);
-fruitsContainer.innerHTML = list.concat(list);
+function test(...args) {
+  console.log("args = ", args);
+}
+
+test`rarsdaskdkansdkjnasd nnnjdkas kjd naskj dkj`;
