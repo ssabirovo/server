@@ -65,9 +65,15 @@ function squareUp(n) {
  */
 
 function bunnyEars(bunnies) {
-  let sum = 0;
-  if (bunnies === 0) return sum;
-
-  sum = 2 + bunnyEars(bunnies - 1);
+  if (bunnies === 0) return 0;
+  let sum = 2 + bunnyEars(bunnies - 1);
   return sum;
 }
+
+/**
+ * let bunnies = 3;
+ * bunnies(3) -> sum = 2 + bunnyEars(2)=4 -> 6
+ * bunnies(2) -> sum = 2 + bunnyEars(1)=2 -> 4
+ * bunnies(1) -> sum = 2 + bunnyEars(0)=0 -> 2
+ * bunnies(0) -> 0
+ */
