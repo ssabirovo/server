@@ -1,14 +1,14 @@
 ---------- 23.04.22 ---------- (64)
---- array - 2 ---
+--- array - 2 --- 👍🏻
 #1 -> withoutTen
 #2 -> zeroMax
 #3 -> fizzBuzz
 
 --- array - 3 ---
 #1 -> squareUp
-#3 -> fix45
-#4 -> maxSpan
-#5 -> seriesUp
-#6 -> maxMirror
+#3 -> fix45 👍🏻
+#4 -> maxSpan 👍🏻
+#5 -> seriesUp 👍🏻
+#6 -> maxMirror 👍🏻
 
 ------- Recursion   -------
