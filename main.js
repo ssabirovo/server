@@ -63,3 +63,11 @@ function squareUp(n) {
  *   ✅ j = 0 -> span = [3,2,1] count = 4;
  *   🏆 span = [3,2,1]; count = 4; temp = [0,0,1,0,2,1,3,2,1]
  */
+
+function bunnyEars(bunnies) {
+  let sum = 0;
+  if (bunnies === 0) return sum;
+
+  sum = 2 + bunnyEars(bunnies - 1);
+  return sum;
+}
