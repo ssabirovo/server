@@ -99,3 +99,17 @@
  * str = "()()" -> splitted = ["","",""], joined = "" => nestParen("") => true
  * str = "" -> true
  */
+
+function starBit(str = "") {
+  let strLen = str.length;
+  if (str[strLen - 1] === "*") {
+    if (str[0] === "-") return str;
+    return starBit(str.substring(1));
+  } else return starBit(str.substring(0, strLen - 1));
+}
+
+/**
+ * str = "xyz,-abc*123" => strLen = 12 => starBit("xyz,-abc*12")
+ *
+
+ */
