@@ -1,22 +1,9 @@
----------- 26.04.22 ---------- (66)
-
-------- Recursion -------
-#1 -> Checking Homeworks 👍🏻
-#2 -> Coding Js challenges 👍🏻
-🏆 BONUS: https://www.youtube.com/watch?v=vLhHyGTkjCs&t=302s 👍🏻
-
+---------- 27.04.22 ---------- (67)
 
 -------------- Functions --------------
-#3 -> Calling || invoking function || running 👍🏻
-#4 -> function parameters vs function arguments 👍🏻
-       ✅ arguments
-#5 -> value function vs non-value function 👍🏻
-#6 -> default parameters 👍🏻
-        ✅ ES5
-        ✅ https://babeljs.io
-#7 -> Function types 👍🏻
-#8 -> Immediately invoking function expression and function calling or running
-#9 -> HOF -> Higher Order Function -> "Yuqori tartibli funksiya"
-#10 -> Pure function
+#1 -> Immediately invoking function expression and function calling or running
+#2 -> HOF -> Higher Order Function -> "Yuqori tartibli funksiya"
+#3 -> Pure function
         ✅ deterministic function
         ✅ side effect1
+

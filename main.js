@@ -55,10 +55,10 @@
 // -------PARAMETERS AND ARGUMENTS-------
 // parameters
 // function greeting(firstName, age) {
-//   // let firstName = arguments[0];
-//   // let age = arguments[1];
+// let firstName = arguments[0];
+// let age = arguments[1];
 //   console.log(`Hello ${firstName}. Age: ${age}`);
-//   // console.log(arguments);
+// console.log(arguments);
 // }
 
 // arguments
