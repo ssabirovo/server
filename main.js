@@ -6,8 +6,8 @@
 // };
 
 // const fruitProcessor = function (apples, oranges) {
-//   const applePieces = cutPieces(apples);
-//   const orangePieces = cutPieces(oranges);
+//   const applePieces = cutPieces(apples); // 16
+//   const orangePieces = cutPieces(oranges); // 20
 
 //   // prettier-ignore
 //   const juice = `Juice with ${applePieces} pieces
@@ -16,25 +16,31 @@
 //   return juice;
 // };
 
+// console.log(fruitProcessor(4, 5));
 // HOF
-// const oneWord = function (str) {
-// };
+const oneWord = function (str) {
+  return str.split(" ")[0];
+};
 
-// const upperFirstWord = function (str) {
-// };
+const upperFirstWord = function (str) {
+  let allWords = str.split(" ");
+  let firstWord = allWords[0];
+  firstWord = firstWord.toUpperCase();
+  allWords = [firstWord].concat(allWords.slice(1));
+  return allWords.join(" ");
+};
 
 // const arr = [2, 3, 4, 5];
 // Higher-order function
-// const transformer = function (str, fn = () => {}) {
-//   console.log(arguments.length);
-//   console.log(fn.name);
+// const transformer = function (str, fn) {
 //   console.log(`Original string: ${str}`);
 //   console.log(`Transformed string: ${fn(str)}`);
 //   console.log(`Transformed by: ${fn.name}`);
 // };
 
-// transformer('JavaScript is the best!', upperFirstWord);
-// transformer('JavaScript is the best!', oneWord);
+// transformer("JavaScript is the best!", upperFirstWord);
+// console.log("-----------");
+// transformer("JavaScript is the best!", oneWord);
 // transformer('JavaScript is the best!');
 
 // SIDE EFFECT
@@ -128,3 +134,113 @@
 // numbers.forEach((num, idx) => {
 //   console.log(`num = ${num}`);
 // });
+
+// const _sum = function (a, b) {
+//   return a + b;
+// };
+
+// (function (a, b, c) {
+//   console.log("Hello Arslonbek");
+// })(10, 20, 30);
+
+// console.log(_sum(20, 15));
+
+// let users = (function (names) {
+//   return names.map((name, index) => {
+//     return { id: index + 2, name };
+//   });
+// })(["Arslonbek", "Murtozxon"]);
+// console.log(users);
+
+// function createUsers(names = []) {
+//   return names.((name, index) => {
+//     return { id: index + 1, name };
+//   });
+// }
+// let users = createUsers(["Arslonbek", "Murtozxon"]);
+// console.log(users);
+
+// function sum(fun) {
+//   console.log(`fun name = ${fun.name}`);
+// }
+
+// function getData() {}
+// function test() {}
+// function _test() {}
+
+// sum(function app() {});
+// sum(test);
+// sum(_test);
+
+// try {
+// throw new Error("arslonbek");
+// } catch (err) {
+//   console.warn("Bizda texnik nosozlik, boshqa bankamantdan yechib koring");
+// }
+
+function createSum() {
+  function sum(a, b) {
+    return a + b;
+  }
+  return sum;
+}
+
+// const summa = createSum();
+// summa(10, 15);
+
+// function logger() {
+//   console.log("Hello World!!!");
+// }
+
+// function bar() {
+//   return logger;
+// }
+
+// const foo = bar();
+// foo();
+
+function buildSumFunction() {
+  return function (a, b, c, d, e, f) {
+    return a + b + c + d + e + f;
+  };
+}
+const sumFunction = buildSumFunction;
+console.log(`summa = ${sumFunction()(1, 2, 3, 4, 5, 6)}`);
+
+// function foo(a) {
+//   return function (b) {
+//     return function (c) {
+//       return function (d) {
+//         return function (e) {
+//           return a + b + c + d + e;
+//         };
+//       };
+//     };
+//   };
+// }
+// function foo(a, b, c, d, e) {
+//   return a + b + c + d + e;
+// }
+
+// const foo = (a) => (b) => (c) => (d) => (e) => a + b + c + d + e;
+
+// foo(1)(2)(3)(4)(5);
+
+const currentYear = 2050;
+
+function calcAge() {
+  let birthYear = arguments[0];
+  test();
+  return currentYear - birthYear;
+}
+
+let a = 0;
+
+const f = () => {
+  a = a + 1;
+  return a;
+};
+
+f(); // 1
+f(); // 2
+f(); // 2

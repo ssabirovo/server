@@ -5,5 +5,5 @@
 #2 -> HOF -> Higher Order Function -> "Yuqori tartibli funksiya"
 #3 -> Pure function
         ✅ deterministic function
-        ✅ side effect1
+        ✅ side effect
 
