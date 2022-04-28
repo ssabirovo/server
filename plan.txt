@@ -1,9 +1,10 @@
 ---------- 28.04.22 ---------- (68)
 
 #1 -> Checking homeworks
+       ✅ localStorage
 ========= Object =========
-#2 -> What is OOP ?
-#3 -> Object methods
-#4 -> Factory Functions
-#4 -> this keywords
-#5 -> Try and Catch
+#2 -> Object methods 👍🏻
+#3 -> Factory Functions 👍🏻
+#4 -> What is OOP ? 👍🏻
+#5 -> this keywords 👍🏻
+#6 -> Try and Catch
