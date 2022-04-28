@@ -1,9 +1,3 @@
----------- 27.04.22 ---------- (67)
-
--------------- Functions --------------
-#1 -> Immediately invoking function expression and function calling or running
-#2 -> HOF -> Higher Order Function -> "Yuqori tartibli funksiya"
-#3 -> Pure function
-        ✅ deterministic function
-        ✅ side effect
-
+---------- 28.04.22 ---------- (68)
+#1 -> Checking homeworks
+#2 ->
