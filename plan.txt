@@ -3,5 +3,7 @@
 #1 -> Checking homeworks
 ========= Object =========
 #2 -> What is OOP ?
-#3 -> Factory Functions
-#4 -> Try and Catch
+#3 -> Object methods
+#4 -> Factory Functions
+#4 -> this keywords
+#5 -> Try and Catch
