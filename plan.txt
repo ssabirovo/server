@@ -1,3 +1,7 @@
 ---------- 28.04.22 ---------- (68)
+
 #1 -> Checking homeworks
-#2 ->
+========= Object =========
+#2 -> What is OOP ?
+#3 -> Factory Functions
+#4 -> Try and Catch
