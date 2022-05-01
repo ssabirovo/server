@@ -1,9 +1,2 @@
----------- 30.04.22 ---------- (70)
+---------- 10.05.22 ---------- (71)
 
-#1 -> Checking homeworks
-#2 -> Try and Catch
---------- HOMEWORKS ---------
-#1 -> https://pig-game-v2.netlify.app/ -> PIG-GAME
-#2 -> https://sudoku.com -> SUDOKU
-#3 -> CLOCK
-#4 -> Optional (*)
