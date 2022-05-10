@@ -1,11 +1,7 @@
----------- 10.05.22 ---------- (71)
+---------- 11.05.22 ---------- (72)
 
-#1 -> checking homeworks 👍🏻
-#2 -> Create Pig-Game
-       ✅ Planning base rules with miro.com 👍🏻
-       ✅ Getting DOM elements 👍🏻
-       ✅ Create Logic and UI functions 👍🏻
+#1 -> checking homeworks
 #2 -> Create Sudoku-Game
-       ✅ Planning base rules with excalidraw.com
+       ✅ Planning base rules with https://miro.com
        ✅ Getting DOM elements
        ✅ Create Logic and UI functions
