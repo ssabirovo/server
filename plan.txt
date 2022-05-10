@@ -3,4 +3,9 @@
 #1 -> checking homeworks
 #2 -> Create Pig-Game
        ✅ Planning base rules with excalidraw.com
-       ✅
+       ✅ Getting DOM elements
+       ✅ Create Logic and UI functions
+#2 -> Create Sudoku-Game
+       ✅ Planning base rules with excalidraw.com
+       ✅ Getting DOM elements
+       ✅ Create Logic and UI functions
