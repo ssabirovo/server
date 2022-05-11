@@ -2,21 +2,38 @@
 const diceImg = document.querySelector(".dice");
 const resetBtn = document.querySelector(".btn--new");
 const rollBtn = document.querySelector(".btn--roll");
+const startBtn = document.querySelector(".btn--start");
 const holdBtn = document.querySelector(".btn--hold");
 const players = document.querySelectorAll(".player"); // [elem1, elem2]
 const scores = document.querySelectorAll(".score"); // [elem1, elem2]
 const currentScores = document.querySelectorAll(".current-score");
-const MAX_SCORE = 5;
+const playerInput_0 = document.getElementById("player_0");
+const playerInput_1 = document.getElementById("player_1");
+const playerNames = document.querySelectorAll(".name");
+const gameZone = document.querySelector(".game-zone");
+const loginZone = document.querySelector(".login-zone");
+const message = document.querySelector(".message");
+// const playerInputs = document.querySelectorAll(".player_input");
+
+// const botSelector = document.getElementById("bot");
+const MAX_SCORE = 50;
 
 let currentScore = 0;
 let _scores = [0, 0];
 let currentPlayer = 0;
 let isPlaying = false;
 let winnerExist = false;
+let isValid = false;
+let firstPlayerName = "";
+let secondPlayerName = "";
+let botIndex;
+let interval;
+let expectedScoreOfBot = 15;
 
 rollBtn.onclick = onRollDice;
 holdBtn.onclick = onHold;
 resetBtn.onclick = onReset;
+startBtn.onclick = onStart;
 
 function onRollDice() {
   let dice = Math.ceil(Math.random() * 6);
@@ -31,19 +48,36 @@ function onRollDice() {
 
   // add dice value to currentScore
   if (dice === 1) {
+    message.innerText = "Eyy, men tugatdim";
     nextPlayer();
   } else {
     currentScore += dice;
     currentScores[currentPlayer].innerText = currentScore;
+    message.innerText = `Man tashadim, ${dice} tushdi.`;
+  }
+
+  if (currentScore > expectedScoreOfBot) {
+    holdBtn.click();
+    clearInterval(interval);
   }
 }
 
 function onHold() {
-  // add currentScore to score and displaying
+  let isBot = currentPlayer === botIndex;
+
   _scores[currentPlayer] += currentScore;
   scores[currentPlayer].innerText = _scores[currentPlayer];
 
   checkWinner();
+  if (!winnerExist) {
+    if (!isBot) {
+      startBOT();
+      message.innerText = "Bot tasha";
+    } else {
+      message.innerText = "Siz tashang ";
+    }
+  }
+
   nextPlayer();
 }
 
@@ -69,6 +103,34 @@ function onReset() {
   }
 }
 
+function onStart() {
+  firstPlayerName = playerInput_0.value;
+  secondPlayerName = playerInput_1.value;
+
+  if (firstPlayerName.toLowerCase().includes("bot")) botIndex = 0;
+  else if (secondPlayerName.toLowerCase().includes("bot")) botIndex = 1;
+
+  gameZone.classList.remove("hidden");
+  loginZone.classList.add("hidden");
+
+  playerNames[0].innerText = firstPlayerName;
+  playerNames[1].innerText = secondPlayerName;
+
+  if (!botIndex && botIndex !== 0) {
+    message.innerText = "Playing without BOT";
+  } else {
+    message.innerText = "Game starts after 3 seconds...";
+    if (botIndex === 0) setTimeout(startBOT, 3000);
+    else message.innerText = "Sizdan bosin";
+  }
+}
+
+function startBOT() {
+  interval = setInterval(() => {
+    rollBtn.click();
+  }, 1000);
+}
+
 function checkWinner() {
   if (_scores[currentPlayer] >= MAX_SCORE) {
     players[currentPlayer].classList.add("player--winner");
@@ -76,12 +138,20 @@ function checkWinner() {
     holdBtn.disabled = true;
     winnerExist = true;
     isPlaying = false;
+    message.innerText = `Winner ${
+      currentPlayer === 0 ? firstPlayerName : secondPlayerName
+    }`;
   }
 }
 
 function nextPlayer() {
   currentScore = 0;
   currentScores[currentPlayer].innerHTML = currentScore;
+  const isBot = currentPlayer === botIndex;
+
+  if (isBot) clearInterval(interval);
+  else startBOT();
+
   if (!winnerExist) {
     players[currentPlayer].classList.remove("player--active");
     currentPlayer = currentPlayer === 0 ? 1 : 0;
@@ -89,19 +159,38 @@ function nextPlayer() {
   }
 }
 
-// {} -> block scope
-// () => {} -> function scope
-// {} -> {...all codes...}
+playerInput_0.addEventListener("keyup", (e) => {
+  const firstPlayerName = e.target.value;
+  const secondPlayerName = playerInput_1.value;
+  if (secondPlayerName !== "" && firstPlayerName !== "")
+    startBtn.classList.add("show");
+  else startBtn.classList.remove("show");
+});
 
-// const my_input = document.getElementById("player_1");
-// const btn = document.getElementById("btn");
-// my_input.addEventListener("keyup", (event) => {
-//   if (event.target.value === "") btn.classList.add("hidden");
-//   else btn.classList.remove("hidden");
-//   console.log("value = ");
-// });
+playerInput_1.addEventListener("keyup", (e) => {
+  const secondPlayerName = e.target.value;
+  const firstPlayerName = playerInput_0.value;
+  if (secondPlayerName !== "" && firstPlayerName !== "")
+    startBtn.classList.add("show");
+  else startBtn.classList.remove("show");
+});
 
-// const bot_input = document.getElementById("bot");
-// bot_input.addEventListener("change", (event) => {
-//   console.log("value = ", event.target.value);
-// });
+/**
+ *-----RULES-----
+ * ✅ LOGIN-ZONE
+ *     🔷 input larni ozgarishini eshitib turish
+ *     🔷 input larni ikkalasida xam qiymat bolsa "start btn" ni displaying qilish
+ *     🔷 "start btn" click bosganida "login-zone" ni hide qilib "game-zone" ni displaying qilish
+ * ✅ BOT
+ *     🔷 bot shoshkol(zarik) ni tashaganda(rollDice) tushgan score ni message-alert da chiqazish
+ *       ✅ message = dice !== 1 ? "Men tashadim, 5 tushdi" : "Eyy, men tugatdim"
+ *     🔷 bot oyinni xoxlagan paytida keyingi player ga otqazadi(hold).
+ *       ✅ message = "Endi san tasha"
+ *     🔷
+ *     🔷
+ *
+ *
+ *
+ *
+ *
+ */

@@ -20,6 +20,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
 /* LAYOUT */
@@ -42,12 +44,14 @@ main {
   width: 100%;
   display: grid;
   place-items: center;
+  transform: scale(2);
 }
 
 .login-zone .form-group {
   margin: 1rem 0;
   width: 150px;
 }
+
 .login-zone .form-group label {
   display: block;
   margin-bottom: 0.35rem;
@@ -59,11 +63,17 @@ main {
 .login-zone .form-group select {
   width: 100%;
 }
-.login-zone button {
+.btn--start {
   width: 150px;
+  display: none;
 }
 
 /* GAME-ZONE */
+.game-zone {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
 .player {
   flex: 50%;
   padding: 9rem;
@@ -141,7 +151,7 @@ main {
   cursor: pointer;
   font-weight: 400;
   transition: all 0.2s;
-
+  background-color: white;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
 
@@ -195,4 +205,8 @@ main {
 
 .hidden {
   display: none;
+}
+
+.show {
+  display: block;
 }
