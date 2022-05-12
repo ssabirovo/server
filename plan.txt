@@ -1,6 +1,6 @@
 ---------- 12.05.22 ---------- (73)
 
-#1 -> checking homeworks
+#1 -> checking homeworks 👍🏻
 #2 -> Create Sudoku-Game
        ✅ Planning base rules with https://miro.com
        ✅ Getting DOM elements
