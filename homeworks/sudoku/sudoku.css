@@ -36,9 +36,13 @@ body .container .game-zone .cell .sub-cell {
   line-height: 63.5555555556px;
   font-size: 30px;
   cursor: pointer;
+  color: #161c24;
 }
 body .container .game-zone .cell .sub-cell.active {
   background-color: #c2deff;
+}
+body .container .game-zone .cell .sub-cell.selected {
+  color: #0072e3;
 }
 body .container .controls-zone {
   display: grid;
