@@ -1,4 +1,4 @@
-- Plans
+- Sudoku Plans
 - #1 -> randomSubCells (Muhammadumar)
 - #2 -> onNew bosilganda loyihani noldan boshalsh kerak(Inomjon)
 - #3 -> biz kiritgan xar bir subCell ajralib turishi kerak(Avazbek)
@@ -18,4 +18,3 @@
 - #17 -> Keyboard dan "0" kiritmasligini tekshirish(Inomjonbek)
 - #18 -> checkFilled function qoshish(Muhammadumar)
 - #19 -> Oldin qiymat kiritlgan subCellga kiritilgan yangi eskisi bilan bir xil bolsa, ushbu subCell ni empty ga aylantirsin
-- #20 ->
