@@ -1,6 +1,9 @@
 * {
   font-family: "Source Sans Pro";
 }
+*:not(input) {
+  user-select: none;
+}
 body {
   margin: 0;
   display: grid;
@@ -62,7 +65,3 @@ body {
     }
   }
 }
-
-// .cell {
-//   display: none;
-// }

@@ -1,7 +1,6 @@
----------- 12.05.22 ---------- (73)
+---------- 13.05.22 ---------- (74)
 
-#1 -> checking homeworks 👍🏻
+#1 -> checking homeworks
 #2 -> Create Sudoku-Game
-       ✅ Planning base rules with https://miro.com
        ✅ Getting DOM elements
-       ✅ Create Logic and UI functions
+       ✅ Create logic and UI functions
