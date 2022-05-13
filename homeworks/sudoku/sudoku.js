@@ -95,18 +95,12 @@ function handleSelect(cellIdx, subIdx) {
   // remove active class all sub elements
   subCells.forEach((sub) => sub.classList.remove("active"));
 
-  const subIdxsOfCell = board[cellIdx];
+  const subIdxsOfCell = board[cellIdx]; // [1,2,3]
   const rowSubIdxs = getRowSubIdxs(cellIdx, subIdx);
   const columnSubIdxs = getColumnSubIdxs(cellIdx, subIdx);
-  const allSubIdxs = subIdxsOfCell.concat(rowSubIdxs).concat(columnSubIdxs);
+  const allSubIdxs = [...subIdxsOfCell, ...rowSubIdxs, ...columnSubIdxs];
 
   addActive(allSubIdxs);
-
-  // renderActive(cellIdx, subIdx);
-  // sub indexes of one row line
-  // addActiveRow(cellIdx, subIdx);
-  // // sub indexes of one column line
-  // addActiveColumn(cellIdx, subIdx);
 }
 
 function getRowSubIdxs(row, column) {
