@@ -1,6 +1,6 @@
----------- 13.05.22 ---------- (74)
+---------- 14.05.22 ---------- (75)
 
-#1 -> checking homeworks 👍🏻
+#1 -> checking homeworks
 #2 -> Create Sudoku-Game
        ✅ Getting DOM elements
        ✅ Create logic and UI functions
