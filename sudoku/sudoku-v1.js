@@ -93,7 +93,7 @@ function renderCells() {
 
 function handleSelect(cellIdx, subIdx) {
   // remove active class all sub elements
-  subCells.forEach((sub) => sub.classList.remove("active"));
+  subCells.forEach((sub) => sub.classList.remove("shadow"));
 
   const subIdxsOfCell = board[cellIdx]; // [1,2,3]
   const rowSubIdxs = getRowSubIdxs(cellIdx, subIdx);
@@ -125,7 +125,8 @@ function getColumnSubIdxs(row, column) {
 
 function addActive(subIdxs) {
   for (let subIdx of subIdxs) {
-    subCells[subIdx].classList.add("active");
+    subCells[subIdx].classList.add("shadow");
   }
 }
+
 renderCells();
