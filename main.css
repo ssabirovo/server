@@ -12,3 +12,26 @@ body {
 h1 {
   font-size: 90px;
 }
+
+.a {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  place-items: center;
+  background-color: purple;
+}
+
+.b {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  place-items: center;
+  background-color: blue;
+}
+.c {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  background-color: red;
+}
