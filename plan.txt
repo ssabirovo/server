@@ -2,3 +2,73 @@
 
 #1 -> checking homeworks
 ============= DOM =============
+
+#2 -> DOM
+       ✅ What is this DOM ?
+       ✅ Difference between DOM and HTML source code
+       ✅ simple examples
+
+#3 -> DOM TREE and Nodes
+       ✅ Most using nodes
+           🔷 Element node
+           🔷 Text node
+           🔷 Comment node
+       ✅ Node types
+           🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
+
+#4 -> Change HTML codes
+       ✅ Most using selectors
+           🔷 document.querySelector()
+           🔷 document.querySelectorAll()
+           🔷 document.getElementById()
+           🔷 document.getElementsByClassName()
+           🔷 document.getElementsByTagName()
+       ✅ Write Examples
+
+#5 -> Children Nodes
+       ✅ Write Examples
+
+#6 -> Sibling Nodes
+       ✅ Write Examples
+
+#7 -> How To Make Changes to the DOM
+       ✅ Creating New Nodes
+           🔷 createElement()
+           🔷 createTextNode()
+           🔷 textContent()
+           🔷 innerHTML()
+           🔷 https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#security_considerations - (cross-site scripting (XSS) )
+           🔷 https://www.youtube.com/watch?v=EoaDgUgS6QA
+       ✅ Inserting Nodes into the DOM
+           🔷 appendChild()
+           🔷 insertBefore()
+           🔷 replaceChild()
+
+       ✅ Removing Nodes from the DOM
+           🔷 removeChild()
+           🔷 remove()
+       ✅ Removing Nodes from the DOM
+           🔷 removeChild()
+           🔷 remove()
+
+#8 -> How To Modify Attributes, Classes, and Styles in the DOM
+       ✅ Attributes functions
+           🔷 hasAttribute
+           🔷 getAttribute
+           🔷 setAttribute
+           🔷 removeAttribute
+       ✅ Modifying Classes
+           🔷 className
+           🔷 classList.add
+           🔷 classList.remove
+           🔷 classList.toggle
+           🔷 classList.replace
+           🔷 classList.remove
+
+
+
+
+
+
+
+
