@@ -1,22 +1,22 @@
 ---------- 17.05.22 ---------- (77)
 
-#1 -> checking homeworks
+#1 -> checking homeworks 👍🏻
 ============= DOM =============
 
 #2 -> DOM
-       ✅ What is this DOM ?
-       ✅ Difference between DOM and HTML source code
-       ✅ simple examples
+       ✅ What is this DOM ? Document Object Model 👍🏻
+       ✅ Difference between DOM and HTML source code 👍🏻
+       ✅ simple examples 👍🏻
 
-#3 -> DOM TREE and Nodes
-       ✅ Most using nodes
+#3 -> DOM TREE and Nodes 👍🏻
+       ✅ Most using nodes 👍🏻
            🔷 Element node
            🔷 Text node
            🔷 Comment node
        ✅ Node types
            🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
 
-#4 -> Change HTML codes
+#4 -> Change HTML codes 👍🏻
        ✅ Most using selectors
            🔷 document.querySelector()
            🔷 document.querySelectorAll()
@@ -25,23 +25,23 @@
            🔷 document.getElementsByTagName()
        ✅ Write Examples
 
-#5 -> Children Nodes
+#5 -> Children Nodes 👍🏻
        ✅ Write Examples
 
-#6 -> Sibling Nodes
+#6 -> Sibling Nodes 👍🏻
        ✅ Write Examples
 
 #7 -> How To Make Changes to the DOM
-       ✅ Creating New Nodes
-           🔷 createElement()
-           🔷 createTextNode()
-           🔷 textContent()
-           🔷 innerHTML()
+       ✅ Creating New Nodes 👍🏻
+           🔷 createElement() 👍🏻
+           🔷 createTextNode()👍🏻
+           🔷 textContent() 👍🏻
+           🔷 innerHTML() 👍🏻
            🔷 https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#security_considerations - (cross-site scripting (XSS) )
            🔷 https://www.youtube.com/watch?v=EoaDgUgS6QA
        ✅ Inserting Nodes into the DOM
-           🔷 appendChild()
-           🔷 insertBefore()
+           🔷 appendChild() 👍🏻
+           🔷 insertBefore() 👍🏻
            🔷 replaceChild()
 
        ✅ Removing Nodes from the DOM
