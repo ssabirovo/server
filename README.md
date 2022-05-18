@@ -1,3 +1,12 @@
+---------- 19.05.22 ---------- (79)
+#1 -> checking homeworks
+
+============= DOM =============
+#2 -> Events Phase
+✅ Bubbling phase
+✅ Capturing Phase
+✅ Target Phase
+
 ## Quiz-App Plans
 
 #1 -> Question ni random qilish (Samandar)
