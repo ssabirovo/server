@@ -1,21 +1,44 @@
-- Sudoku Plans
-- #1 -> randomSubCells (Muhammadumar) 👍🏻
-- #2 -> onNew bosilganda loyihani noldan boshalsh kerak(Inomjon) 👍🏻
-- #3 -> biz kiritgan xar bir subCell ajralib turishi kerak(Avazbek) 👍🏻
-- #4 -> randomSubCell larni ozgartirib bomasin(Rahmonbek) 👍🏻
-- #5 -> cellRender function yaratishimiz kerak(Abdulxoliq) 👍🏻
-- #6 -> onErase boganda tanlangan subCell remove bolishi kerak(Murtozxon) 👍🏻
-- #7 -> randomSubCell takroriy index da bolmasligi kerak(Husniddinbek) 👍🏻
-- #8 -> keyboard event larni qoshish(Muhiddin)- 👍🏻
-- #9 -> select qilingan elementga active class ni qoshish(Muhammaddiyor K) 👍🏻
-- #10 -> oldin yozilgan element ustiga takroran yozish(Muhammaddiyor) 👍🏻
-- #11 -> Bosilganni index ni topib olish(Hasanboy) 👍🏻
-- #12 -> numBtns lardan foydalanish(Samandar) 👍🏻
-- #13 -> subCell boshqa tanlanganda oldingi tanlangan subCell dan "active" classni remove qilish(Muhammaddiyor) 👍🏻
-- #14 -> Enter bosilganda active subCell ni "active" class ni remove qilish(Muhammadumar) 👍🏻
-- #15 -> Backspace keyboardEvent ni ishlatish(Inomjonbek) 👍🏻
-- #16 -> Kiritlgan qiymat doimo bitta belgi va raqam bolishi kerak, add validation function (Muhammaddiyor) 👍🏻
-- #17 -> Keyboard dan "0" kiritmasligini tekshirish(Inomjonbek) 👍🏻
-- #18 -> checkFilled function qoshish(Muhammadumar) 👍🏻
-- #19 -> Oldin qiymat kiritlgan subCellga kiritilgan yangi qiymat eskisi bilan bir xil bolsa, ushbu subCell ni empty ga aylantirsin 👍🏻
-- #20 -> Sub dan tashqariga bosilsa sub ning active ni ochirish 👍🏻
+---------- 18.05.22 ---------- (78)
+
+#1 -> checking homeworks
+
+============= DOM =============
+#2 -> How To Make Changes to the DOM
+✅ Inserting Nodes into the DOM
+🔷 appendChild()
+🔷 insertBefore()
+🔷 replaceChild()
+
+       ✅ Removing Nodes from the DOM
+           🔷 removeChild()
+           🔷 remove()
+
+#3 -> How To Modify Attributes, Classes, and Styles in the DOM
+✅ Attributes functions
+🔷 hasAttribute
+🔷 getAttribute
+🔷 setAttribute
+🔷 removeAttribute
+✅ Modifying Classes
+🔷 className
+🔷 classList.add
+🔷 classList.remove
+🔷 classList.toggle
+🔷 classList.replace
+🔷 classList.remove
+
+#4 -> Events
+✅ How to add event handler
+🔷 Inline event handler
+🔷 Event handler properties
+🔷 Event listeners
+✅ Common Events
+🔷 Mouse Events
+🔷 Focus(Form) Events
+🔷 Keyboard Events
+🔷 All Events : https://developer.mozilla.org/en-US/docs/Web/API/Event
+
+#5 -> Events Phase
+✅ Bubbling phase
+✅ Capturing Phase
+✅ Target Phase
