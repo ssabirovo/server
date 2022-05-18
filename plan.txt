@@ -1,8 +1,8 @@
 ---------- 18.05.22 ---------- (78)
 
 #1 -> checking homeworks
-============= DOM =============
 
+============= DOM =============
 #2 -> How To Make Changes to the DOM
        ✅ Inserting Nodes into the DOM
            🔷 appendChild()
