@@ -12,3 +12,20 @@ body {
 h1 {
   font-size: 90px;
 }
+.box {
+  background-color: lightgreen;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+}
+/*
+button {
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+button:last-child {
+  background-color: green;
+} */

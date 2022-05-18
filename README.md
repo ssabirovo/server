@@ -1,44 +1,14 @@
----------- 18.05.22 ---------- (78)
+## Quiz-App Plans
 
-#1 -> checking homeworks
-
-============= DOM =============
-#2 -> How To Make Changes to the DOM
-✅ Inserting Nodes into the DOM
-🔷 appendChild()
-🔷 insertBefore()
-🔷 replaceChild()
-
-       ✅ Removing Nodes from the DOM
-           🔷 removeChild()
-           🔷 remove()
-
-#3 -> How To Modify Attributes, Classes, and Styles in the DOM
-✅ Attributes functions
-🔷 hasAttribute
-🔷 getAttribute
-🔷 setAttribute
-🔷 removeAttribute
-✅ Modifying Classes
-🔷 className
-🔷 classList.add
-🔷 classList.remove
-🔷 classList.toggle
-🔷 classList.replace
-🔷 classList.remove
-
-#4 -> Events
-✅ How to add event handler
-🔷 Inline event handler
-🔷 Event handler properties
-🔷 Event listeners
-✅ Common Events
-🔷 Mouse Events
-🔷 Focus(Form) Events
-🔷 Keyboard Events
-🔷 All Events : https://developer.mozilla.org/en-US/docs/Web/API/Event
-
-#5 -> Events Phase
-✅ Bubbling phase
-✅ Capturing Phase
-✅ Target Phase
+#1 -> Question ni random qilish (Samandar)
+#2 -> Answerlarni random potition olishi (Muhiddin)
+#3 -> Help funkisiyalarini qoshish (Rahmonbek)
+#4 -> Timer funksiya qoshish (Abdulholiq)
+#5 -> Point larni yozib ketish (Inomjon)
+#6 -> Question larni yigib ketish (Avazbek)
+#7 -> CheckAnswer funksiya qoshish (Abdulholiq)
+#8 -> keyBoard event dan foydalanish (Muhammadumar)
+#9 -> Total Point larni chiqarish (Samandar)
+#10 -> onReset funksiyasini qoshish(Muhammadumar)
+#11 -> showResult() funksiyani qoshish(Arslonbek)
+#12 -> onPointSelect funksiyasini yaratish (Arslonbek)
