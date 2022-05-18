@@ -4,9 +4,9 @@
 
 ### 2 - Events Phase
 
-       ✅ Bubbling phase
-       ✅ Capturing Phase
-       ✅ Target Phase
+    ✅ Bubbling phase
+    ✅ Capturing Phase
+    ✅ Target Phase
 
 # Quiz-App Plans
 
