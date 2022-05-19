@@ -1,20 +1,20 @@
 # ----------19.05.22 ---------- (79)
 
-### 1 - checking homeworks
+### 1 - checking homeworks 👍🏻
 
-### 2 - Events Phase
+### 2 - Events Phase 👍🏻
 
     ✅ Bubbling phase
     ✅ Capturing Phase
-    ✅ Target Phase
+    ✅ Target
 
-### 3 - Event dispatch
+### 3 - Event dispatch 👍🏻
 
-### 4 - Window Object
+### 4 - Window Object 👍🏻
 
 # Quiz-App Plans
 
-    1 - Question ni random qilish **Samandar**
+    1 - Question ni random qilish (Samandar)
     2 - Answerlarni random potition olishi (Muhiddin)
     3 - Help funkisiyalarini qoshish (Rahmonbek)
     4 - Timer funksiya qoshish (Abdulholiq)

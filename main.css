@@ -12,3 +12,11 @@ body {
 h1 {
   font-size: 90px;
 }
+
+.box {
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid lightblue;
+  text-align: center;
+  cursor: pointer;
+}
