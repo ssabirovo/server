@@ -1,16 +1,8 @@
-# ----------19.05.22 ---------- (79)
+# ----------20.05.22 ---------- (80)
 
-### 1 - checking homeworks 👍🏻
+### 1️⃣ Checking homeworks
 
-### 2 - Events Phase 👍🏻
-
-    ✅ Bubbling phase
-    ✅ Capturing Phase
-    ✅ Target
-
-### 3 - Event dispatch 👍🏻
-
-### 4 - Window Object 👍🏻
+### 2️⃣ Create Quiz-app proeject
 
 # Quiz-App Plans
 
