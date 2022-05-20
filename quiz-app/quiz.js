@@ -1,16 +1,31 @@
-"use strict";
+import { generateAnswer } from "./utils.js";
 const operations = ["*", "-", "+"];
+const quizzes = [];
 
-const generateUnsortedAnswers = (corAnswer) => {
-  return [44, 11, 20, corAnswer];
+// LOGIC FUNCTIONS
+const generateAnswers = (corAnswer) => {
+  const answers = [corAnswer];
+  for (let i = 1; i < 4; i++) answers[i] = generateAnswer(corAnswer);
+  const mixedAnswers = answers.sort(() => Math.random() - 0.5);
+  return mixedAnswers;
 };
+
 function generateQuiz() {
   const firstNum = Math.ceil(Math.random() * 100); // 40
   const secondNum = Math.ceil(Math.random() * 100); // 33
   const ranOpIdx = Math.floor(Math.random() * operations.length);
   const operation = operations[ranOpIdx]; // +
   const correctAnswer = calcQuiz(firstNum, secondNum, operation);
-  const unsortedAnswers = generateUnsortedAnswers(correctAnswer); // xato javoblar listi [46,70,78,73] -> [70,78,73,46]
+  const answers = generateAnswers(correctAnswer);
+  const selectedIdx = null;
+  return {
+    firstNum,
+    secondNum,
+    operation,
+    correctAnswer,
+    answers,
+    selectedIdx,
+  };
 }
 
 function calcQuiz(firstNum, secondNum, operation) {
@@ -23,3 +38,18 @@ function calcQuiz(firstNum, secondNum, operation) {
       return firstNum * secondNum;
   }
 }
+
+// EVENT HANDLER FUNCTIONS
+
+// UI FUNCTIONS
+
+function renderQuiz() {
+  const quiz = generateQuiz();
+  console.log("quiz = ", quiz);
+}
+
+function init() {
+  renderQuiz();
+}
+
+init();
