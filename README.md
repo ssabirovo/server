@@ -6,7 +6,9 @@
 
 # Quiz-App Plans
 
-    1 - Question ni random qilish (Samandar)
+    1 - Quiz ni random qilish (Samandar)
+            ✅ quiz ni faqat logic qismi 👍🏻
+            ✅ quiz ni render qilish
     2 - Answerlarni random potition olishi (Muhiddin)
     3 - Help funkisiyalarini qoshish (Rahmonbek)-
     4 - Timer funksiya qoshish (Abdulholiq)-
