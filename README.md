@@ -1,26 +1,6 @@
-# ----------23.05.22 ---------- (81)
+# ----------24.05.22 ---------- (82)
 
-### 1️⃣ Checking homeworks 👍🏻
-
-### 2️⃣ Rest Parameters 👍🏻
-
-### 3️⃣ Spread Operator 👍🏻
-
-### 4️⃣ Array Destructuring
-
-         ✅ default value 👍🏻
-         ✅ using rest params 👍🏻
-         ✅ using function parameters 👍🏻
-
-### 5️⃣ Object Destructuring
-
-         ✅ default value 👍🏻
-         ✅ change name of variable 👍🏻
-         ✅ using function parameters 👍🏻
-
-### 6️⃣ Create Quiz-app project
-
-### 7️⃣ Speach of Saidmuhammad
+### 1️⃣ Checking homeworks
 
 # Quiz-App Plans
 
