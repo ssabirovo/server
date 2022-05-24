@@ -1,8 +1,8 @@
 # ----------24.05.22 ---------- (82)
 
-### 1️⃣ Checking homeworks
+## 1️⃣ Checking homeworks
 
-# Quiz-App Plans
+## 2️⃣ Quiz-App Plans
 
     1 - Quiz ni random qilish (Samandar)
             ✅ quiz ni faqat logic qismi 👍🏻
