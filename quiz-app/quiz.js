@@ -1,4 +1,9 @@
-import { generateAnswer } from "./utils.js";
+import { generateAnswer, calcQuiz } from "./utils.js";
+const first_num = document.querySelector(".first-number");
+const second_num = document.querySelector(".second-number");
+const operation_ui = document.querySelector(".operation");
+const answers_ui = document.querySelectorAll(".answer");
+const quiz_round = document.querySelector(".quiz-round");
 const operations = ["*", "-", "+"];
 const quizzes = [];
 
@@ -18,7 +23,7 @@ function generateQuiz() {
   const correctAnswer = calcQuiz(firstNum, secondNum, operation);
   const answers = generateAnswers(correctAnswer);
   const selectedIdx = null;
-  return {
+  const quiz = {
     firstNum,
     secondNum,
     operation,
@@ -26,30 +31,41 @@ function generateQuiz() {
     answers,
     selectedIdx,
   };
+  quizzes.push(quiz);
+  quiz_round.innerText = quizzes.length;
+  return quiz;
 }
 
-function calcQuiz(firstNum, secondNum, operation) {
-  switch (operation) {
-    case "+":
-      return firstNum + secondNum;
-    case "-":
-      return firstNum - secondNum;
-    case "*":
-      return firstNum * secondNum;
-  }
+function nextQuiz() {
+  const newQuiz = generateQuiz();
+  renderQuiz(newQuiz);
 }
 
 // EVENT HANDLER FUNCTIONS
+function onSelectAnswer(event) {
+  const currentQuiz = quizzes[quizzes.length - 1]; // currentQuiz
+  currentQuiz.selectedIdx = event.target.id;
+  nextQuiz();
+}
 
 // UI FUNCTIONS
 
-function renderQuiz() {
-  const quiz = generateQuiz();
-  console.log("quiz = ", quiz);
+function renderQuiz(quiz) {
+  const { operation, firstNum, secondNum, answers, correctAnswer } = quiz;
+  first_num.innerText = firstNum;
+  second_num.innerText = secondNum;
+  operation_ui.innerText = operation;
+
+  answers_ui.forEach((answer_ui, idx) => {
+    answer_ui.innerText = answers[idx];
+    answer_ui.id = idx;
+    answer_ui.addEventListener("click", onSelectAnswer);
+  });
 }
 
 function init() {
-  renderQuiz();
+  const firstQuiz = generateQuiz();
+  renderQuiz(firstQuiz);
 }
 
 init();
