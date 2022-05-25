@@ -10,7 +10,7 @@
     2 - Answerlarni random potition olishi (Muhiddin) 👍🏻
     3 - Help funkisiyalarini qoshish (Rahmonbek)-
     4 - Timer funksiya qoshish (Abdulholiq)-
-    5 - Point larni yozib ketish (Inomjon)-
+    5 - Point larni yozib ketish (Inomjon) - 👍🏻
     6 - Question larni yigib ketish (Avazbek) 👍🏻
     7 - CheckAnswer funksiya qoshish (Abdulholiq) 👍🏻
     8 - keyBoard event dan foydalanish (Muhammadumar)-
