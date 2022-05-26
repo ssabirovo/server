@@ -8,10 +8,37 @@
     <title>Quiz-app</title>
   </head>
   <body>
-    <section class="game-zone">
+    <section class="degree-zone">
+      <h1 class="degre-title">QUIZ APP</h1>
+      <button class="degree-button">Easy</button>
+      <button class="degree-button">Medium</button>
+      <button class="degree-button">Hard</button>
+    </section>
+
+    <section class="game-zone hide">
+      <div class="result-zone hide">
+        <div>
+          <h3>All results</h3>
+          <div class="row">
+            <div class="point-group">
+              <button class="point-result point--timeout" disabled>4</button>
+              <button class="point-result point--fail" disabled>3</button>
+            </div>
+            <div class="point-percent">46%</div>
+          </div>
+          <div class="row">
+            <div class="point-group">
+              <button class="point-result point--success" disabled>8</button>
+            </div>
+            <div class="point-percent">54%</div>
+          </div>
+          <button class="btn" id="btn-reset">reset</button>
+          <button class="btn" id="btn-show-answers">show results</button>
+        </div>
+      </div>
       <header>
         <h1 class="quiz-round"></h1>
-        <h1 class="timer">10s</h1>
+        <h1 class="timer">s</h1>
       </header>
       <div class="quiz-zone">
         <div class="quiz">

@@ -1,6 +1,5 @@
 import { generateAnswer, calcQuiz } from "./utils.js";
-const MAX_ROUND = 15;
-const MAX_TIME = 5;
+import { rules, classOfStatus } from "./data.js";
 const first_num = document.querySelector(".first-number");
 const second_num = document.querySelector(".second-number");
 const operation_ui = document.querySelector(".operation");
@@ -8,12 +7,24 @@ const answers_ui = document.querySelectorAll(".answer");
 const quiz_round = document.querySelector(".quiz-round");
 const points_ui = document.querySelector(".points");
 const timer_ui = document.querySelector(".timer");
-const operations = ["*", "-", "+"];
-const quizzes = [];
-const classOfStatus = ["fail", "success", "timeout"];
+const gameZone = document.querySelector(".game-zone");
+const degreeZone = document.querySelector(".degree-zone");
+const resultZone = document.querySelector(".result-zone");
+const degreeButtons = document.querySelectorAll(".degree-button");
+const pointsResult = document.querySelectorAll(".point-result");
+const pointPercents = document.querySelectorAll(".point-percent");
+const btnReset = document.getElementById("btn-reset");
+const btnShowAnswers = document.getElementById("btn-show-answers");
+const MAX_ROUND = 10;
+let MAX_TIME = 0;
+let operations = ["*", "-", "+"];
+let quizzes = [];
 
-let timer = MAX_TIME;
+let firstNum;
+let secondNum;
+let timer;
 let intervalId;
+let distance;
 
 // LOGIC FUNCTIONS
 const generateAnswers = (corAnswer) => {
@@ -23,9 +34,40 @@ const generateAnswers = (corAnswer) => {
   return mixedAnswers;
 };
 
+function showAllResult() {
+  const answerAmounts = [0 /**timeout */, 0 /**fail */, 0 /**success */];
+  toggleZone(resultZone);
+
+  quizzes.forEach((quiz) => {
+    const isTimeout = quiz.selectedIdx === null;
+    const isCorrect = quiz.correctAnswer === quiz.answers[quiz.selectedIdx];
+    const amountIdx = isTimeout ? 0 : isCorrect ? 2 : 1;
+    answerAmounts[amountIdx]++;
+  });
+
+  pointPercents[0].innerText =
+    (100 * (answerAmounts[0] + answerAmounts[1])) / MAX_ROUND + "%";
+  pointPercents[1].innerText = (100 * answerAmounts[2]) / MAX_ROUND + "%";
+  pointsResult.forEach((point_ui, idx) => {
+    point_ui.innerText = answerAmounts[idx];
+  });
+
+  btnReset.addEventListener("click", onReset);
+  btnShowAnswers.addEventListener("click", onShowAnswers);
+}
+
+function createInterval() {
+  intervalId = setInterval(() => {
+    timer--;
+    timer_ui.innerText = timer + "s";
+    checkTimer();
+  }, 1000);
+}
+
 function generateQuiz() {
-  const firstNum = Math.ceil(Math.random() * 100); // 40
-  const secondNum = Math.ceil(Math.random() * 100); // 33
+  firstNum = Math.ceil(Math.random() * distance);
+  secondNum = Math.ceil(Math.random() * distance);
+  console.log(distance);
   const ranOpIdx = Math.floor(Math.random() * operations.length);
   const operation = operations[ranOpIdx]; // +
   const correctAnswer = calcQuiz(firstNum, secondNum, operation);
@@ -45,26 +87,23 @@ function generateQuiz() {
 }
 
 function nextQuiz() {
-  const newQuiz = generateQuiz();
-  renderQuiz(newQuiz);
+  if (quizzes.length !== MAX_ROUND) renderQuiz(generateQuiz());
 }
 
 function checkTimer() {
   if (timer === 0) {
     timer = MAX_TIME;
     timer_ui.innerText = timer + "s";
-
     renderPoint(classOfStatus[2]);
     nextQuiz();
-
     checkFinish();
   }
 }
 
 function checkFinish() {
-  if (quizzes.length === MAX_ROUND) {
-    alert("Oyin tugadi");
-    return clearInterval(intervalId);
+  if (quizzes.length >= MAX_ROUND) {
+    clearInterval(intervalId);
+    showAllResult();
   }
 }
 
@@ -74,9 +113,9 @@ function onSelectAnswer({ target }) {
   currentQuiz.selectedIdx = target.id;
   const isCorrect = currentQuiz.correctAnswer === +target.innerText;
 
-  if (quizzes.length === MAX_ROUND) {
-    alert("Oyin tugadi");
-    return clearInterval(intervalId);
+  if (quizzes.length >= MAX_ROUND) {
+    clearInterval(intervalId);
+    showAllResult();
   }
 
   if (isCorrect) {
@@ -85,9 +124,16 @@ function onSelectAnswer({ target }) {
   }
   const classIdx = isCorrect ? 1 : 0;
   renderPoint(classOfStatus[classIdx]);
+
   nextQuiz();
 }
 
+function onReset() {
+  toggleZone(degreeZone, [gameZone, resultZone]);
+}
+function onShowAnswers() {}
+
+// UI FUNCTIONS
 function renderPoint(suffix) {
   const className = `point point--${suffix}`;
   const btn = document.createElement("button");
@@ -96,11 +142,8 @@ function renderPoint(suffix) {
   btn.disabled = true;
   points_ui.appendChild(btn);
 }
-
-// UI FUNCTIONS
-
 function renderQuiz(quiz) {
-  const { operation, firstNum, secondNum, answers, correctAnswer } = quiz;
+  const { operation, firstNum, secondNum, answers } = quiz;
   first_num.innerText = firstNum;
   second_num.innerText = secondNum;
   operation_ui.innerText = operation;
@@ -112,18 +155,42 @@ function renderQuiz(quiz) {
   });
 }
 
-function init() {
+function initGameZone() {
+  points_ui.innerHTML = "";
+  quizzes = [];
   const firstQuiz = generateQuiz();
   renderQuiz(firstQuiz);
   createInterval();
 }
 
-function createInterval() {
-  intervalId = setInterval(() => {
-    timer--;
-    timer_ui.innerText = timer + "s";
-    checkTimer();
-  }, 1000);
+function toggleZone(showZone, hideZones = [], callback) {
+  showZone.classList.remove("hide"); // on visible
+  if (hideZones.length !== 0)
+    hideZones.forEach((zone) => zone.classList.add("hide")); //  on hidden
+  if (callback) callback();
+}
+
+function initDegreeZone() {
+  degreeButtons.forEach((btn, idx) => {
+    btn.addEventListener("click", () => {
+      const {
+        distance: _distance,
+        maxTime,
+        operations: _operations,
+      } = rules[idx];
+      distance = _distance;
+      MAX_TIME = maxTime;
+      operations = _operations;
+      timer = MAX_TIME;
+      timer_ui.innerText = `${timer}s`;
+
+      toggleZone(gameZone, [degreeZone], initGameZone);
+    });
+  });
+}
+
+function init() {
+  initDegreeZone();
 }
 
 init();
