@@ -2,6 +2,24 @@
 
 ## 1️⃣ Checking homeworks
 
+## 2️⃣ Async JS
+
+        setTimeout
+        Patterns
+                ✅ Callbacks
+                ✅ Promises
+                ✅ Async/await
+        Callbacks
+        Callback Hell
+        Promises
+                ✅ Pending
+                ✅ Resolve
+                ✅ Rejected
+                ✅ than
+                ✅ catch
+        Replacing Callbacks with Promises
+        Parallel Promises
+
 ## 2️⃣ Quiz-App Plans
 
     1 - Quiz ni random qilish (Samandar)
