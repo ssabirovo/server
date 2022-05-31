@@ -1,28 +1,29 @@
 # ---------- 31.05.22 ---------- (86)
 
-## 1️⃣ Checking homeworks
+## 1️⃣ Checking homeworks 👍🏻
 
 ## 2️⃣ Async JS
 
-        Asynchronous vs Synchronous
-        setTimeout
+        Asynchronous(non-blocking) vs Synchronous(blocking) 👍🏻
+        setTimeout 👍🏻
         Patterns
-                ✅ Callbacks
-                ✅ Promises
-                ✅ Async/await
-        Callbacks
-        Callback Hell
+                ✅ Callbacks 👍🏻
+                ✅ Promises 👍🏻
+                ✅ Async / await
+        Callbacks 👍🏻
+        Callback Hell 👍🏻
         Promises
-                ✅ Pending
-                ✅ Resolve
-                ✅ Rejected
-                ✅ than
-                ✅ catch
-        Replacing Callbacks with Promises
-        Parallel Promises
+                ✅ Pending 👍🏻
+                ✅ Resolve 👍🏻
+                ✅ Rejected 👍🏻
+                ✅ than 👍🏻
+                ✅ catch 👍🏻
+                ✅ finily 👍🏻
+        Replacing Callbacks with Promises 👍🏻
+        Parallel Promises 👍🏻
         Simple example with DOM
 
-## 2️⃣ Quiz-App Plans
+## 3️⃣ Quiz-App Plans
 
     1 - Quiz ni random qilish (Samandar)
             ✅ quiz ni faqat logic qismi 👍🏻
