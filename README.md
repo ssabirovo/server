@@ -1,27 +1,8 @@
-# ---------- 31.05.22 ---------- (86)
+# ---------- 01.06.22 ---------- (87)
 
 ## 1️⃣ Checking homeworks 👍🏻
 
 ## 2️⃣ Async JS
-
-        Asynchronous(non-blocking) vs Synchronous(blocking) 👍🏻
-        setTimeout 👍🏻
-        Patterns
-                ✅ Callbacks 👍🏻
-                ✅ Promises 👍🏻
-                ✅ Async / await
-        Callbacks 👍🏻
-        Callback Hell 👍🏻
-        Promises
-                ✅ Pending 👍🏻
-                ✅ Resolve 👍🏻
-                ✅ Rejected 👍🏻
-                ✅ than 👍🏻
-                ✅ catch 👍🏻
-                ✅ finily 👍🏻
-        Replacing Callbacks with Promises 👍🏻
-        Parallel Promises 👍🏻
-        Simple example with DOM
 
 ## 3️⃣ Quiz-App Plans
 
