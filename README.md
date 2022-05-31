@@ -1,9 +1,10 @@
-# ----------27.05.22 ---------- (85)
+# ---------- 31.05.22 ---------- (86)
 
 ## 1️⃣ Checking homeworks
 
 ## 2️⃣ Async JS
 
+        Asynchronous vs Synchronous
         setTimeout
         Patterns
                 ✅ Callbacks
@@ -19,6 +20,7 @@
                 ✅ catch
         Replacing Callbacks with Promises
         Parallel Promises
+        Simple example with DOM
 
 ## 2️⃣ Quiz-App Plans
 

@@ -6,9 +6,6 @@ export function generateAnswer(corAnswer) {
   return corAnswer + distance;
 }
 
-// default export
-// import anyName from "utils.js"
-
 export function calcQuiz(firstNum, secondNum, operation) {
   switch (operation) {
     case "+":
