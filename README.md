@@ -2,7 +2,11 @@
 
 ## 1️⃣ Checking homeworks 👍🏻
 
-## 2️⃣ Async JS
+## 2️⃣ AJAX - Asynchronous JavaScript And XML
+
+        ✅ Simple example AJAX Request
+        ✅ explain fetch
+        ✅ Simple example with fetch 
 
 ## 3️⃣ Quiz-App Plans
 
