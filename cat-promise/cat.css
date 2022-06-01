@@ -4,7 +4,15 @@ body {
   display: grid;
   place-items: center;
 }
-body .start-zone .load-btn {
+body .start-zone {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+body .start-zone button {
+  width: 100%;
   background-color: red;
   border: none;
   color: #fff;
@@ -13,7 +21,7 @@ body .start-zone .load-btn {
   cursor: pointer;
   transition: 0.1s linear all;
 }
-body .start-zone .load-btn:active {
+body .start-zone button:active {
   transform: scale(0.98);
 }
 body .load-zone .boxes {
