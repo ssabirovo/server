@@ -71,16 +71,16 @@ wpOneBtn.addEventListener("click", () => {
 wpAllBtn.addEventListener("click", () => {
   toggleZone(); // zone toggle
 
-  const promises = [];
-  for (let idx = 0; idx < images.length; idx++) {
-    const promise = loadImg(images[idx], idx);
-    promises.push(promise);
-  }
+  // const promises = [];
+  // for (let idx = 0; idx < images.length; idx++) {
+  //   const promise = loadImg(images[idx], idx);
+  //   promises.push(promise);
+  // }
 
-  Promise.all(promises).then((loadedImgURLS) => {
-    for (let idx = 0; idx < loadedImgURLS.length; idx++)
-      addLoadedImgForOne(loadedImgURLS[idx], idx);
-  });
+  // Promise.all(promises).then((loadedImgURLS) => {
+  //   for (let idx = 0; idx < loadedImgURLS.length; idx++)
+  //     addLoadedImgForOne(loadedImgURLS[idx], idx);
+  // });
 });
 
 function addLoadedImgForOne(loadedImgURL, idx) {
