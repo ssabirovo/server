@@ -1,6 +1,6 @@
-# ---------- 01.06.22 ---------- (87)
+# ---------- 02.06.22 ---------- (88)
 
-## 1️⃣ Checking homeworks 👍🏻
+## 1️⃣ Checking homeworks
 
 ## 2️⃣ AJAX - Asynchronous JavaScript And XML
 
