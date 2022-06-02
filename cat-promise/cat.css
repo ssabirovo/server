@@ -1,0 +1,82 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body .load-zone .show-more-btn, body .load-zone .boxes .box .random-btn, body .start-zone button {
+  background-color: red;
+  border: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.1s linear all;
+}
+body .load-zone .show-more-btn:not(:disabled):active, body .load-zone .boxes .box .random-btn:not(:disabled):active, body .start-zone button:not(:disabled):active {
+  transform: scale(0.98);
+}
+body .load-zone .show-more-btn:disabled, body .load-zone .boxes .box .random-btn:disabled, body .start-zone button:disabled {
+  background-color: lightgray;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+body .load-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .load-zone .boxes {
+  width: 700px;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+body .load-zone .boxes .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .load-zone .boxes .box .inner-box {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed;
+}
+body .load-zone .boxes .box .inner-box .spinner {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  animation: spin infinite 3s linear;
+  border: 3px dashed;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .load-zone .boxes .box .inner-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .load-zone .boxes .box .random-btn {
+  font-size: 20px;
+  padding: 0.5rem;
+  margin-top: 5px;
+}
+body .load-zone .show-more-btn {
+  width: max-content;
+  padding: 0.5rem 1rem;
+  background-color: dodgerblue;
+}
+body .hide {
+  display: none !important;
+}
