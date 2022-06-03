@@ -79,7 +79,7 @@ const p = { ...fake({ ...person }) };
 
 console.log("person = ", person); // {}
 console.log("p = ", p); //           {}
-console.log(p === person);
+console.log(p === person); // false
 
 /**
  * MAIN-STACK
