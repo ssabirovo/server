@@ -66,37 +66,53 @@ let myJob = job;
 //  *               202 |   city  |   "Tashkent"
 //  */
 
-function fake(obj = {}) {
+const person = { firstName: "arslonbek" }; // MH(0001)
+console.log(person, "MH(0001)");
+
+function fake(obj) {
   obj.age = 20;
-  return obj;
+  return obj; // {firstName: "arslonbek",age = 20 } MH(0002)
 }
 
-const person = {
-  firstName: "arslonbek",
-};
+const newPerson = { ...person };
+console.log(newPerson, "MH(0002)"); // { firstName: "arslonbek" } MH(0002)
+const newObj = fake(newPerson); // { firstName: "arslonbek", age: 20 } MH(0002)
+console.log(newObj, "MH(0002)");
+console.log("newObj === newPerson ", newObj === newPerson); // true
 
-const p = { ...fake({ ...person }) };
+const p = { ...newObj }; // { firstName: "arslonbek",age = 20 } MH(0003)
+console.log(p, "MH(0003)");
 
-console.log("person = ", person); // {}
-console.log("p = ", p); //           {}
-console.log(p === person); // false
+console.log("person = ", person); // { firstName: 'arslonbek' } MH(0001)
+console.log("p = ", p); //
+console.log(p === person);
 
 /**
  * MAIN-STACK
  *  address |   name     |   value
- * --------------------------------
- *    002   |    p       |   MH(0001)
- *    001   |    person  |   MH(0001)
+ * _________________________________
+ *    005   |  p         |   MH(0003)
+ *    004   |  newObj    |   MH(0002)
+ *    003   |  obj       |   MH(0002)
+ *    002   |  newPerson |   MH(0002)
+ *    001   |  person    |   MH(0001)
  */
+
 
 /**
  * MAIN-HEAP
  * address        |        value
  *-----------------------------------
- *   0001         |  address |   name         |       value
- *                    102    |    age         |        20
- *                    101    |    firstName   |    "arslonbek"
- *
+ *   0001         |  address |    name         |       value
+ *                    101    |    firstName    |    "arslonbek"
+ * --------------------------------
+ *   0002         |  address |    name         |       value
+ *                    102    |    age          |        20
+ *                    101    |    firstName    |    "arslonbek"
+ * --------------------------------
+ *   0003         |  address |    name         |       value
+ *                    102    |    age          |        20
+ *                    101    |    firstName    |    "arslonbek"
  * --------------------------------
  *
  */
