@@ -114,5 +114,4 @@ console.log(p === person);
  *                    102    |    age          |        20
  *                    101    |    firstName    |    "arslonbek"
  * --------------------------------
- *
  */
