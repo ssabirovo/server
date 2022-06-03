@@ -7,3 +7,5 @@
         ✅ Simple example AJAX Request
         ✅ explain fetch
         ✅ Simple example with fetch
+
+## 3️⃣ Simple and full example
