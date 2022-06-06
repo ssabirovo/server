@@ -2,27 +2,34 @@ const express = require("express"); // es5
 const cors = require("cors"); // import cors from "cors"
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 let todos = [
   {
     id: "123",
-    todo: "Uxlamayman darsda",
     completed: true,
+    todo: "Uxlamayman darsda",
   },
   {
     id: "124",
-    todo: "Uxlayman uyda",
     completed: false,
+    todo: "Uxlayman uyda",
   },
   {
     id: "125",
-    todo: "Vazifani qilaman",
     completed: true,
+    todo: "Vazifani qilaman",
   },
 ];
 
 // http://localhost:3000/todos -> GET
 app.get("/todos", (req, res) => {
+  res.send(todos);
+});
+
+app.post("/todos/:todo", (req, res) => {
+  const todo = req.params;
+  console.log("todo = ", todo);
   res.send(todos);
 });
 
