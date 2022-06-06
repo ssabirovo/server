@@ -66,36 +66,3 @@ function renderTodos(todos = []) {
 }
 
 loadTodosBtn.addEventListener("click", getTodos);
-
-// httpRequest.onreadystatechange = function () {
-//   console.log(`this.readyState = ${this.readyState}`);
-// };
-
-// function fetchJSONFile(path, callback) {
-//   let httpRequest = new XMLHttpRequest();
-
-//   httpRequest.onreadystatechange = function () {
-//     if (this.readyState === 4) {
-//       if (this.status === 200) {
-//         const data = JSON.parse(this.responseText);
-
-//         if (callback) callback(data);
-//       }
-//     }
-//   };
-
-//   httpRequest.open("GET", path);
-//   httpRequest.send();
-// }
-
-// fetchJSONFile("./users.json", (data) => {
-//   console.log("parsed = ", data);
-// });
-
-// const jsonString = `{ "age": 20, "job": "Teacher", "salary": 1000 }`;
-// console.log(JSON.parse(jsonString));
-// console.log(typeof JSON.parse(jsonString));
-
-// const person = { bigAge: 20, job: "Teacher", salary: 1000 };
-// console.log(person);
-// console.log(JSON.stringify(person));
