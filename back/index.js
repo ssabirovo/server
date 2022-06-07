@@ -27,12 +27,6 @@ app.get("/todos", (req, res) => {
   res.send(todos);
 });
 
-app.post("/todos/:todo", (req, res) => {
-  const todo = req.params;
-  console.log("todo = ", todo);
-  res.send(todos);
-});
-
 // http://localhost:3000/todos/todoID -> DELETE
 app.delete("/todos/:id", (req, res) => {
   const id = req.params.id;
@@ -40,5 +34,9 @@ app.delete("/todos/:id", (req, res) => {
   res.send(todos);
 });
 
+app.post("/todos", (req, res) => {
+  console.log("todo = ", req.body);
+  res.send(todos);
+});
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Listening on port ${PORT}...`));
