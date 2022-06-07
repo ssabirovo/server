@@ -12,23 +12,35 @@ const descriptionInput = document.getElementById("description-input");
 const loginForm = document.getElementById("login-form");
 const usernameInput = document.getElementById("username-input");
 
-const url = "http://10.10.1.58:3000/todos";
+const url = "http://localhost:3000/todos";
 let username = "";
 
-function getTodos() {
-  let httpRequest = new XMLHttpRequest();
+// AJAX
+// function getTodos() {
+//   let httpRequest = new XMLHttpRequest();
 
-  console.log("Loading...");
+//   console.log("Loading...");
 
-  httpRequest.addEventListener("load", function () {
-    console.log("Loaded");
+//   httpRequest.addEventListener("load", function () {
+//     console.log("Loaded");
 
-    const todos = JSON.parse(this.responseText); // parse JSON
-    renderTodos(todos);
-  });
+//     const todos = JSON.parse(this.responseText); // parse JSON
+//     renderTodos(todos);
+//   });
 
-  httpRequest.open("GET", url);
-  httpRequest.send();
+//   httpRequest.open("GET", url);
+//   httpRequest.send();
+// }
+
+// FETCH web api
+async function getTodos() {
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    console.log("data = ", data);
+  } catch (err) {
+    console.error(err.message);
+  }
 }
 
 function createTodo(description) {
