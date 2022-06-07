@@ -3,10 +3,17 @@ const thead = document.querySelector("thead");
 const tbody = document.querySelector("tbody");
 const loadTodosBtn = document.getElementById("load-todos-btn");
 
-const addTodoBtn = document.getElementById("add-todo-btn");
-const todoInput = document.getElementById("todo-input");
+const loginZone = document.querySelector(".login-zone");
+const todoZone = document.querySelector(".todo-zone");
 
-const url = "http://localhost:3000/todos";
+const addTodoBtn = document.getElementById("add-todo-btn");
+const descriptionInput = document.getElementById("description-input");
+
+const loginForm = document.getElementById("login-form");
+const usernameInput = document.getElementById("username-input");
+
+const url = "http://10.10.1.58:3000/todos";
+let username = "";
 
 function getTodos() {
   let httpRequest = new XMLHttpRequest();
@@ -24,7 +31,7 @@ function getTodos() {
   httpRequest.send();
 }
 
-function createTodo(todo) {
+function createTodo(description) {
   let httpRequest = new XMLHttpRequest();
 
   httpRequest.addEventListener("load", function () {
@@ -35,7 +42,7 @@ function createTodo(todo) {
 
   httpRequest.open("POST", url);
   httpRequest.setRequestHeader("Content-Type", "application/json");
-  httpRequest.send('{ "age": 20, "phone": "+998998961348" }');
+  httpRequest.send(JSON.stringify({ description, username }));
 }
 
 function deleteTodo(todoID) {
@@ -48,8 +55,8 @@ function deleteTodo(todoID) {
     renderTodos(todos);
   });
 
-  httpRequest.send();
   httpRequest.open("DELETE", url + `/${todoID}`);
+  httpRequest.send();
 }
 
 function renderTodos(todos = []) {
@@ -60,7 +67,8 @@ function renderTodos(todos = []) {
     const tableRow = document.createElement("tr");
 
     tableRow.appendChild(createTD(todo.id));
-    tableRow.appendChild(createTD(todo.todo));
+    tableRow.appendChild(createTD(todo.description));
+    tableRow.appendChild(createTD(todo.username));
     tableRow.appendChild(createTD(todo.completed));
     tableRow.appendChild(
       createTD(
@@ -80,11 +88,25 @@ function createTD(text, withInnerHTML = false) {
   return td;
 }
 
+function toggleZone(showZone, hideZone) {
+  showZone.classList.remove("hide");
+  hideZone.classList.add("hide");
+}
+
 loadTodosBtn.addEventListener("click", getTodos);
 
 addTodoBtn.addEventListener("click", () => {
-  const todo = todoInput.value.trim();
+  const description = descriptionInput.value.trim();
 
-  if (!todo) return alert("Todo ni kiriting");
-  createTodo(todo);
+  if (!description) return alert("Todo ni kiriting");
+  createTodo(description);
+});
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const value = usernameInput.value.trim();
+
+  if (!value) return alert("Username ni kiriting");
+  username = value;
+  toggleZone(todoZone, loginZone);
 });

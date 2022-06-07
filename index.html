@@ -15,26 +15,44 @@
   </head>
   <body>
     <div class="container">
-      <form>
-        <div>
-          <label for="todo-input">Enter Todo</label>
-          <input type="text" id="todo-input" placeholder="Todo Enter..." />
-        </div>
-        <button type="button" id="add-todo-btn">Add Todo</button>
-      </form>
+      <div class="login-zone">
+        <form id="login-form">
+          <label for="username-input">Enter Username</label>
+          <input
+            type="text"
+            id="username-input"
+            placeholder="Enter username..."
+          />
+          <button type="submit">Login</button>
+        </form>
+      </div>
 
-      <table class="table table-bordered">
-        <thead class="bg-dark text-light">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Todo</th>
-            <th scope="col">Completed</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-      <button id="load-todos-btn">Load Todos</button>
+      <div class="todo-zone hide">
+        <div>
+          <label for="description-input">Enter Todo</label>
+          <input
+            type="text"
+            id="description-input"
+            placeholder="Todo Enter..."
+          />
+        </div>
+
+        <button type="button" id="add-todo-btn">Add Todo</button>
+
+        <table class="table table-bordered">
+          <thead class="bg-dark text-light">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Description</th>
+              <th scope="col">Username</th>
+              <th scope="col">Completed</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button id="load-todos-btn">Load Todos</button>
+      </div>
     </div>
   </body>
   <script src="main.js"></script>
