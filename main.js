@@ -6,7 +6,7 @@ const loadTodosBtn = document.getElementById("load-todos-btn");
 const addTodoBtn = document.getElementById("add-todo-btn");
 const todoInput = document.getElementById("todo-input");
 
-const url = "http://192.168.43.39:3000/todos";
+const url = "http://localhost:3000/todos";
 
 function getTodos() {
   let httpRequest = new XMLHttpRequest();
@@ -33,8 +33,9 @@ function createTodo(todo) {
     renderTodos(todos);
   });
 
-  httpRequest.open("POST", url + `/${todo}`, true);
-  httpRequest.send();
+  httpRequest.open("POST", url);
+  httpRequest.setRequestHeader("content-type", "application/json");
+  httpRequest.send(JSON.stringify({ todo }));
 }
 
 function deleteTodo(todoID) {
