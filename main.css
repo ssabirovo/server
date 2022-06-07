@@ -3,12 +3,10 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  background-color: #efed40;
 }
 
 h1 {
   font-size: 90px;
-}
-
-.hide {
-  display: none;
+  font-family: monospace;
 }
