@@ -6,19 +6,22 @@ app.use(express.json());
 
 let todos = [
   {
-    id: "123",
+    id: 1,
     completed: true,
-    todo: "Uxlamayman darsda",
+    description: "Uxlamayman darsda",
+    username: "Backend",
   },
   {
-    id: "124",
+    id: 2,
     completed: false,
-    todo: "Uxlayman uyda",
+    description: "Uxlayman uyda",
+    username: "Backend",
   },
   {
-    id: "125",
+    id: 3,
     completed: true,
-    todo: "Vazifani qilaman",
+    description: "Vazifani qilaman",
+    username: "Backend",
   },
 ];
 
@@ -30,12 +33,23 @@ app.get("/todos", (req, res) => {
 // http://localhost:3000/todos/todoID -> DELETE
 app.delete("/todos/:id", (req, res) => {
   const id = req.params.id;
-  todos = todos.filter((todo) => todo.id !== id);
+  console.log(`id = ${id}`);
+  console.log(typeof id);
+  todos = todos.filter((todo) => todo.id !== +id);
   res.send(todos);
 });
 
 app.post("/todos", (req, res) => {
-  console.log("todo = ", req.body);
+  const description = req.body.description;
+  const username = req.body.username;
+  const todo = {
+    id: todos.length + 1,
+    completed: false,
+    description,
+    username,
+  };
+  console.log("todo = ", todo);
+  todos.push(todo);
   res.send(todos);
 });
 
