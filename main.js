@@ -34,8 +34,8 @@ function createTodo(todo) {
   });
 
   httpRequest.open("POST", url);
-  httpRequest.setRequestHeader("content-type", "application/json");
-  httpRequest.send(JSON.stringify({ todo }));
+  httpRequest.setRequestHeader("Content-Type", "application/json");
+  httpRequest.send('{ "age": 20, "phone": "+998998961348" }');
 }
 
 function deleteTodo(todoID) {
@@ -48,8 +48,8 @@ function deleteTodo(todoID) {
     renderTodos(todos);
   });
 
-  httpRequest.open("DELETE", url + `/${todoID}`);
   httpRequest.send();
+  httpRequest.open("DELETE", url + `/${todoID}`);
 }
 
 function renderTodos(todos = []) {
