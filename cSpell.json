@@ -1,8 +1,4 @@
 {
-  "ignorePaths": [
-    "README.md"
-  ],
-  "words": [
-    "shelfi"
-  ]
+  "ignorePaths": ["README.md"],
+  "words": ["shelfi"]
 }
