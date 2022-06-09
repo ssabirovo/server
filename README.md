@@ -1,4 +1,4 @@
-# ---------- 09.06.22 ---------- (93)
+# ---------- 10.06.22 ---------- (94)
 
 ## 1️⃣ Checking homeworks
 
@@ -25,10 +25,6 @@
         ✅ Event Loop
                 🔷 Web API
                 🔷 Callback Queue
-
-## 4️⃣ Form Data
-
-## 5️⃣ Async await
 
 ### URLS
 
