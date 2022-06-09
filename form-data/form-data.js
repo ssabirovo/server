@@ -9,7 +9,7 @@ function submitForm(e) {
   const name = document.getElementById("name");
   const files = document.getElementById("files");
 
-  const formData = new FormData(); // [[key,[value1,value2]],[key,value],[key,value]]
+  const formData = new FormData(); // [[key,value],[key,value],[key,value]]
   formData.append("name", "Arslonbek");
   formData.append("name", "Boburbek");
   for (let i = 0; i < files.files.length; i++) {
