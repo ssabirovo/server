@@ -8,6 +8,6 @@ let baz = $.getData("//baz.com")
 
 
 
-console.log(foo);
-console.log(bar);
-console.log(baz);
+console.log(foo); // 20
+console.log(bar); // 10
+console.log(baz); // 30
