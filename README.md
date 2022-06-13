@@ -4,21 +4,21 @@
 
 ## 2️⃣ What is javaScript
 
-        ✅ What is level
-        ✅ Prototype-based object oriented
-        ✅ Multi paradigm
-        ✅ Interpreted or Just-In-Time Compiled(JIT)
-        ✅ Dynamic
-        ✅ Single thread
-        ✅ Garbage collected
-        ✅ First-Class functions
+        ✅ What is level 👍🏻
+        ✅ Prototype-based object oriented 👍🏻
+        ✅ Multi paradigm 👍🏻
+        ✅ Interpreted or Just-In-Time Compiled(JIT) 👍🏻
+        ✅ Dynamic 👍🏻
+        ✅ Single thread 👍🏻
+        ✅ Garbage collected 👍🏻
+        ✅ First-Class functions 👍🏻
         ✅ Event Loop 😎
 
 ## 3️⃣ JavaScript Engine
 
-        ✅ What is js engine
-        ✅ The Anatomy of the JavaScript engine
-        ✅ How JavaScript is optimized?
+        ✅ What is js engine 👍🏻
+        ✅ The Anatomy of the JavaScript engine 👍🏻
+        ✅ How JavaScript is optimized? 👍🏻
         ✅ What about other JavaScript engines?
         ✅ JavaScript at runtime
                 🔷 JavaScript at runtime
