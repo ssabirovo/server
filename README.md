@@ -1,17 +1,27 @@
-# ---------- 14.06.22 ----------(96)
+# ---------- 16.06.22 ----------(97)
 
-## 1️⃣ Coding Task
+## 1️⃣ Explain the new rules
 
-        ✅ input: [1,1,2]
-        ✅ output: [[1,1,2],[1,2,1],[2,1,1]]
+        ✅ J
 
-        ✅ input: [1,2,3]
-        ✅ output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+## 2️⃣ JavaScript code Execution
 
-## 2️⃣ JavaScript Project (Pomodoro)
+        ✅ explain with first.js and second.js files
+                🔷 Global execution context
+                🔷 Local execution context
+                🔷 Variable environmentf
+                🔷 Call Stack & POP and PUSH
 
-        ✅ https://www.figma.com/file/6vLCZnDbs0Zvh3vjLGe098/PDP-18?node-id=6304%3A2724
+        ✅ Execution context
+                🔷 Variable Environment
+                🔷 Scope chain
+                🔷 this keyword
+
+        ✅ Scope chain
+                🔷 what is scoping
+                🔷 Global & Function & Block
+                🔷 Explain
 
 ### URLS
 
-         ✅ https://pomofocus.io/
+         ✅ https://frontendmasters.com/courses/javascript-new-hard-parts/javascript-code-execution/
