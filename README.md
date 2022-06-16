@@ -7,7 +7,7 @@
         ✅ explain with first.js and second.js files
                 🔷 Global execution context
                 🔷 Local execution context
-                🔷 Variable environmentf
+                🔷 Variable environment
                 🔷 Call Stack & POP and PUSH
 
         ✅ Execution context
