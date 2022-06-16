@@ -2,8 +2,6 @@
 
 ## 1️⃣ Explain the new rules
 
-        ✅ J
-
 ## 2️⃣ JavaScript code Execution
 
         ✅ explain with first.js and second.js files
