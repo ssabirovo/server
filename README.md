@@ -1,5 +1,5 @@
 # ---------- 17.06.22 ----------(98)
 
-## 1️⃣ Explain the new rules
+## 1️⃣ Checking Homework
 
 ## 2️⃣ Real App
