@@ -13,3 +13,10 @@ module.exports = function (app) {
 	app.use('/api/auth', auth)
 	app.use(error)
 }
+
+
+
+// http://kun.uz/api/courses -> GET
+// http://kun.uz/api/customers -> GET
+// http://kun.uz/api/users -> GET
+// http://kun.uz/api/auth -> GET

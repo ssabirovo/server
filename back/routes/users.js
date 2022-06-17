@@ -10,6 +10,7 @@ router.get('/me', auth, async (req, res) => {
 })
 
 router.post('/', async (req, res) => {
+	console.log('req.body = ', req.body)
 	const {value, error} = validate(req.body)
 	if (error) return res.send(error.details[0].message)
 
