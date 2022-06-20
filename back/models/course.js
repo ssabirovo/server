@@ -15,6 +15,13 @@ const courseSchema = new mongoose.Schema({
 		min: 400,
 		max: 5000,
 	},
+	createdBy: {
+		type: String,
+		trim: true,
+		required: true,
+		minlength: 4,
+		maxlength: 50,
+	},
 })
 
 const Course = mongoose.model('Course', courseSchema)

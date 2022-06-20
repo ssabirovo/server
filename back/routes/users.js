@@ -12,7 +12,7 @@ router.get('/me', auth, async (req, res) => {
 router.post('/', async (req, res) => {
 	console.log('req.body = ', req.body)
 	const {value, error} = validate(req.body)
-	if (error) return res.send(error.details[0].message)
+	if (error) return res.status(400).send(error.details[0].message)
 
 	let user = await User.findOne({email: value.email})
 	if (user) return res.status(400).send('User already registered.')

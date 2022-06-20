@@ -5,7 +5,7 @@ const admin = require('../middleware/admin')
 const {Course, validate} = require('../models/course')
 
 router.get('/', async (req, res) => {
-	const courses = await Course.find().sort('name').select('-__v')
+	const courses = await Course.find().sort('price').select('-__v')
 	res.send(courses)
 })
 
@@ -14,11 +14,12 @@ router.get('/:id', async (req, res) => {
 	if (!course) return res.status(404).send('Product not fount')
 	res.send(course)
 })
-
+// create course
 router.post('/', auth, async (req, res) => {
-	const {value, error} = validate(req.body)
+	let {value, error} = validate(req.body)
+	console.log('error = ', error)
 	if (error) return res.send(error.details[0].message)
-
+	value = {...value, createdBy: req.user.name}
 	let course = new Course(value)
 	course = await course.save()
 	res.send(course)
@@ -36,10 +37,14 @@ router.put('/:id', auth, async (req, res) => {
 	res.send(course)
 })
 
-router.delete('/:id', [auth, admin], async (req, res) => {
+router.delete('/:id', [auth], async (req, res) => {
 	if (!mongoose.Types.ObjectId.isValid(req.params.id))
 		return res.status(404).send('Invalid course id...😎')
-	const course = await Course.findByIdAndDelete(req.params.id)
+	const course = await Course.findById(req.params.id)
+
+	if (course.createdBy !== req.user.name)
+		return res.status(404).send('Invalid course id...😎')
+	course.remove()
 	if (!course) return res.status(404).send('Product not fount')
 	res.send(course)
 })
