@@ -4,7 +4,7 @@
 
 ## 2️⃣ Object Oriented Programming
 
-            ✅ Encapsulation
-            ✅ Abstraction
+            ✅ Encapsulation 👍🏻
+            ✅ Abstraction 👍🏻
             ✅ Inheritance
             ✅ Polymorphism
