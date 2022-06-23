@@ -1,47 +1,53 @@
 "use strict";
 
-// // factory function
-export function createEmployee(name, pricePerHour, workingTime, dayAmount) {
-  return {
-    name,
-    pricePerHour,
-    workingTime,
-    dayAmount,
-    getSalary() {
-      const { pricePerHour, workingTime, dayAmount, name } = this;
-      console.log(
-        `${name}'s salary : ${pricePerHour * workingTime * dayAmount}$`
-      );
-    },
-  };
-}
-// employee1.getSalary();
-// employee2.getSalary();
-// employee3.getSalary();
+const person = {
+  firstName: "Arslonbek",
+  phoneNumber: "+998998961348",
+  address: {
+    state: "Uzbekistan",
+    city: "Tashkent",
+  },
+  run(a, b) {
+    console.log(`a = ${a}`);
+    console.log(`b = ${b}`);
+    console.log(`${this.firstName}  🏃‍♂️🏃‍♂️🏃‍♂️🏃‍♂️ running...`);
+  },
+};
 
-class User {
-  constructor(username, email, password) {
-    this.username = username;
-    this.email = email;
-    this.password = password;
-  }
-  setFullName(fullName) {
-    this.fullName = fullName;
-  }
-}
+const toshbaqa = {
+  firstName: "ToshbaqaZZ",
+  phoneNumber: "+998998961111",
+  address: {
+    state: "Uzbekistan",
+    city: "Tashkent",
+  },
+};
 
-const user = new User("ArslonbekXX", "code.2307@gmail.com", "xyz20042004");
-user.setFullName("Arslonbek Alimbayev");
-console.log("user = ", user);
+// person.run(20, 30);
+person.run.bind(toshbaqa)(1, 2);
 
-const user2 = new User("Arslonbek", "code@gmail.com", "xyz23042304");
-console.log("user2 = ", user2);
+// person.run.call(toshbaqa, 1, 2);
+// person.run.apply(toshbaqa, [1, 2]);
 
+// person1.show = person.showInfo;
+// person1.show();
 
+// console.log(show === person.showInfo);
 
-function app(){
+// class Person {
+//   name = "Arslonbek";
+//   showName() {
+//     console.log(`my name is ${this.name}`);
+//   }
+// }
 
-}
+// const _person = new Person();
 
+// _person.showName();
 
-console.log(app);
+// app.call(_person);
+// console.log(_person);
+
+// function app() {
+//   console.log(`v2 : my name is ${this.name}`);
+// }

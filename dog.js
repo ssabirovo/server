@@ -2,8 +2,9 @@
 import { Animal } from "./animal.js";
 
 class Dog extends Animal {
-  constructor(name, age, color) {
-    super(name, age, color);
+  constructor(name, age, color, isBig) {
+    super();
+    this.isBig = isBig;
   }
 
   onSecure() {
@@ -12,24 +13,24 @@ class Dog extends Animal {
   onSpeak() {
     console.log(`${this.name} 👮‍♀️ wow-wow...`);
   }
+  onShow() {
+    console.log(`${this.name} big 🦮`);
+  }
 }
 
 class Cat extends Animal {
-  constructor(name, age, color) {
-    super(name, age, color);
-  }
   onSee() {
     console.log(`${this.name} 🙈 see ...`);
   }
 }
 
-const dog = new Dog("Reks", 1, "black");
-const cat = new Cat("Mushukvoy", 1, "black");
-
+const dog = new Dog("Reks", 1, "black", true);
 console.log(dog);
-console.log(cat);
-
 dog.onSpeak();
-cat.onSpeak();
 dog.onSecure();
+dog.onShow();
+
+const cat = new Cat("Mushukvoy", 1, "black", "red");
+console.log(cat);
+cat.onSpeak();
 cat.onSee();

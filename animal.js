@@ -1,9 +1,6 @@
 "use strict";
 
 export class Animal {
-  name = "";
-  age = "";
-  color = "";
   constructor(name, age, color) {
     this.name = name;
     this.age = age;
