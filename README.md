@@ -1,10 +1,5 @@
-# ---------- 22.06.22 ----------(101)
+# ---------- 23.06.22 ----------(102)
 
 ## 1️⃣ Checking Homework
 
-## 2️⃣ Object Oriented Programming
-
-            ✅ Encapsulation 👍🏻
-            ✅ Abstraction 👍🏻
-            ✅ Inheritance
-            ✅ Polymorphism
+## 2️⃣ V
