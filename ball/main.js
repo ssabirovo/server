@@ -48,9 +48,9 @@ var Box = /** @class */ (function () {
         var x2 = this.state.x + this.state.size * 0.5;
         var y1 = box.state.y + box.state.size * 0.5;
         var y2 = this.state.y + this.state.size * 0.5;
-        var distance = Math.pow((Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2)), 0.5);
+        var distance = Math.ceil(Math.pow((Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2)), 0.5));
         h1.innerText = "Box1(".concat(this.state.x, ",").concat(this.state.y, ") and Box1(").concat(box.state.x, ",").concat(box.state.y, ") interval = ").concat(distance, "px");
-        if (Math.abs(distance + 1 - (box.state.size + this.state.size) / 2) < 1) {
+        if (distance <= (box.state.size + this.state.size) / 2) {
             this.isStop = true;
         }
     };
@@ -77,8 +77,8 @@ function init() {
     var state2 = {
         x: random(0, window.innerWidth - 50),
         y: random(0, window.innerHeight - 50),
-        xSpeed: 1,
-        ySpeed: 1,
+        xSpeed: 1 / Math.pow(2, 0.5),
+        ySpeed: 1 / Math.pow(2, 0.5),
         size: 240,
         color: randomColor(),
         name: "Box-2"

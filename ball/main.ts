@@ -68,11 +68,11 @@ class Box {
     const y1 = box.state.y + box.state.size * 0.5;
     const y2 = this.state.y + this.state.size * 0.5;
 
-    const distance = ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5;
+    const distance = Math.ceil(((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5);
 
     h1!.innerText = `Box1(${this.state.x},${this.state.y}) and Box1(${box.state.x},${box.state.y}) interval = ${distance}px`;
 
-    if (Math.abs(distance + 1 - (box.state.size + this.state.size) / 2) < 1) {
+    if (distance <= (box.state.size + this.state.size) / 2) {
       this.isStop = true;
     }
   }
@@ -101,8 +101,8 @@ function init() {
   const state2: IState = {
     x: random(0, window.innerWidth - 50),
     y: random(0, window.innerHeight - 50),
-    xSpeed: 1,
-    ySpeed: 1,
+    xSpeed: 1 / Math.pow(2, 0.5),
+    ySpeed: 1 / Math.pow(2, 0.5),
     size: 240,
     color: randomColor(),
     name: "Box-2",
