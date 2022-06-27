@@ -5,12 +5,23 @@
 }
 body {
   background-color: #efed40;
-  display: grid;
-  height: 100vh;
-  place-items: center;
+  margin: 0;
 }
 
-h1 {
-  font-size: 80px;
-  font-family: monospace;
+.boxes {
+  border: 10px solid black;
+}
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.box-first {
+  background-color: dodgerblue;
+}
+.box-second {
+  background-color: red;
+}
+.box-third {
+  background-color: blue;
 }
