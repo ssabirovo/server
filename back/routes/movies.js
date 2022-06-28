@@ -18,15 +18,18 @@ router.post("/", [auth], async (req, res) => {
   if (error) return res.status(400).send(error.details[0].message);
 
   const genre = await Genre.findById(req.body.genreId);
-  if (!genre) return res.status(400).send("Invalid genre.");
+  if (!genre) return res.status(400).send("Invalid genre id.");
 
   const movie = new Movie({
     title: req.body.title,
     genre,
     numberInStock: req.body.numberInStock,
     dailyRentalRate: req.body.dailyRentalRate,
+    createdBy: req.user.name,
     publishDate: moment().toJSON(),
+    updatedBy: "MRX",
   });
+
   await movie.save();
 
   res.send(movie);
@@ -49,6 +52,7 @@ router.put("/:id", [auth], async (req, res) => {
       },
       numberInStock: req.body.numberInStock,
       dailyRentalRate: req.body.dailyRentalRate,
+      updatedBy: req.user.name,
     },
     { new: true }
   );
@@ -59,7 +63,7 @@ router.put("/:id", [auth], async (req, res) => {
   res.send(movie);
 });
 
-router.delete("/:id", [auth, admin], async (req, res) => {
+router.delete("/:id", [auth], async (req, res) => {
   const movie = await Movie.findByIdAndRemove(req.params.id);
 
   if (!movie)
