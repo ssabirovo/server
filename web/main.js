@@ -40,7 +40,7 @@ const getOneGenre = endPoint(`/genres`);
 const getAllMovies = endPoint("/movies");
 const getOneMovie = endPoint("/movies");
 const createMovie = endPoint("/movies", "post");
-const editGenre = endPoint("/genres", "post");
+const editGenre = endPoint("/genres", "put");
 const deleteGenre = endPoint("/genres", "delete");
 
 const points = [
