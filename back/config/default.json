@@ -1,6 +1,0 @@
-{
-  "jwtPrivateKey": "unsecureKey",
-  "db": "mongodb://localhost/pdp-movies",
-  "port": "8000",
-  "requiresAuth": true
-}
