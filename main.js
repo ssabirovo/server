@@ -1,3 +1,1 @@
-
-
-console.log(Math.max());
+"use strict";

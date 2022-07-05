@@ -1,5 +1,5 @@
-# ---------- 05.07.22 ----------(110)
+# ---------- 06.07.22 ----------(111)
 
 ## 1️⃣ Checking Homework
 
-## 2️⃣ JS Interview Questions
+## 2️⃣ JS Prototype
