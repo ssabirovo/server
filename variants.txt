@@ -1,0 +1,25 @@
+
+
+Muhiddin:
+    { age: 19, name: "Avazbek" }
+    { age: 19, changeName: f(){} }
+    { age: 20, name: "Rahmonbek" }
+    { age: 20, changeName: f(){} }
+
+Muhammadumar:
+    { age: 19, name: "Rahmonbek" }
+    { age: 19, changeName: f(){} }
+    { age: 20, name: "Rahmonbek" }
+    { age: 20, changeName: f(){} }
+
+Arslonbek-v1:
+    { age: 19, name: "Avazbek" }
+    { age: 20, changeName: f(){} }
+    { age: 20, name: "Inomjonbek" }
+    { age: 20, changeName: f(){} }
+
+Arslonbek-v2:
+    { age: 19, name: "Muhiddin" }
+    { age: 19, changeName: f(){} }
+    { age: 20, name: "Inomjonbek" }
+    { age: 20, changeName: f(){} }
