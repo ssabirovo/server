@@ -1,5 +1,5 @@
 # ---------- 08.07.22 ----------(113)
 
-## 1️⃣ Checking Homework
+## 1️⃣ Checking homework
 
-## 2️⃣ NPM Packages
+## 2️⃣ JS Interview Question
