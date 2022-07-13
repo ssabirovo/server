@@ -4,8 +4,7 @@
 
 ## 2️⃣ Create some function
 
-       ✅ Create img loading function
-       ✅ Create img rendering function
+       ✅ Create img loading function 👍🏻
        ✅ Create add shadow function
        ✅ Create assign function
 
