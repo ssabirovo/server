@@ -1,22 +1,10 @@
-# ---------- 13.07.22 ----------(114)
+# ---------- 14.07.22 ----------(115)
 
 ## 1️⃣ Checking homework
 
-## 2️⃣ Create some function
+## 2️⃣ Repeat old lesson
 
-       ✅ Create img loading function 👍🏻
-       ✅ Create add shadow function
-       ✅ Create assign function
-
-## 3️⃣ Published package
-
-         ✅ Sign up npmjs.com
-         ✅ Add git repo
-         ✅ Publish package
-
-## 4️⃣ Use npm package
-
-## 5️⃣ About semantic version
+## 3️⃣ About semantic version
 
          ✅ what is semantic version
          ✅ what are [^] | [~]
