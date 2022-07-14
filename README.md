@@ -1,6 +1,6 @@
 # ---------- 14.07.22 ----------(115)
 
-## 1️⃣ Checking homework
+## 1️⃣ Checking homework 😡
 
 ## 2️⃣ Repeat old lesson
 
