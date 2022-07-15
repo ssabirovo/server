@@ -1,12 +1,30 @@
 # ---------- 16.07.22 ----------(117)
 
-## 1️⃣ Checking homework
+## 1️⃣ What Is React ?
 
-## 2️⃣ Repeat old lesson
+         ✅ JSX
+         ✅ Component
+         ✅ FAST FAST FAST DOM (Vertual DOM)
 
-## 3️⃣ About semantic version
+## 2️⃣ Explain React Folder Structure
 
-         ✅ what is semantic version
-         ✅ what are [^] | [~]
-         ✅ view dependencies of package
-         ✅ view versions of package
+         ✅ React eject
+
+## 3️⃣ JSX
+
+         ✅ React.createElement
+         ✅ babeljs.io
+         ✅ js expression with JSX
+         ✅ https://reactjs.org/docs/jsx-in-depth.html#gatsby-focus-wrapper
+
+## 4️⃣ Class Component
+
+         ✅ Fragment
+         ✅ Create counter Component
+
+## 5️⃣ Using Bootstrap With React
+
+         ✅ download
+         ✅ import
+
+## 6️⃣ Coding Challange
