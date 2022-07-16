@@ -12,15 +12,14 @@
 
 ## 3️⃣ JSX
 
-         ✅ React.createElement
-         ✅ babeljs.io
-         ✅ js expression with JSX
+         ✅ React.createElement 👍🏻
+         ✅ babeljs.io 👍🏻
+         ✅ js expression with JSX 👍🏻
          ✅ https://reactjs.org/docs/jsx-in-depth.html#gatsby-focus-wrapper
 
 ## 4️⃣ Class Component
 
          ✅ Fragment
-         ✅ Create counter Component
 
 ## 5️⃣ Using Bootstrap With React
 
