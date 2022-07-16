@@ -1,12 +1,12 @@
 # ---------- 16.07.22 ----------(117)
 
-## 1️⃣ What Is React ?
+## 1️⃣ What Is React ? 👍🏻
 
          ✅ JSX
          ✅ Component
          ✅ FAST FAST FAST DOM (Vertual DOM)
 
-## 2️⃣ Explain React Folder Structure
+## 2️⃣ Explain React Folder Structure 👍🏻
 
          ✅ React eject
 
