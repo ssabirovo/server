@@ -1,29 +1,33 @@
 # ---------- 18.07.22 ----------(118)
 
-## 1️⃣ What Is React ? 👍🏻
+## 1️⃣ Install vscode extentions
 
-         ✅ JSX
-         ✅ Component
-         ✅ FAST FAST FAST DOM (Vertual DOM)
+         ✅ React Snippets
+         ✅ ES7 + React
+         ✅ ESLINT
+         ✅ Material Icon theme
 
-## 2️⃣ Explain React Folder Structure 👍🏻
+## 2️⃣ Using Bootstrap With React
 
-         ✅ React eject
+         ✅ install & using
+         ✅ craete Counter component
 
-## 3️⃣ JSX
+## 3️⃣ Setting Attributes
 
-         ✅ React.createElement 👍🏻
-         ✅ babeljs.io 👍🏻
-         ✅ js expression with JSX 👍🏻
-         ✅ https://reactjs.org/docs/jsx-in-depth.html#gatsby-focus-wrapper
+         ✅ using expression
+         ✅ using style object
 
-## 4️⃣ Class Component
+## 4️⃣ Props
 
-         ✅ Fragment
+         ✅ What is props
+         ✅ using props
+         ✅ example
+         ✅ practice - 118
 
-## 5️⃣ Using Bootstrap With React
+## 5️⃣ JSX In Depth
 
-         ✅ download
-         ✅ import
+         ✅ Ignored values
+         ✅ Default true props
+         ✅ using String Literals
 
 ## 6️⃣ Coding Challange
