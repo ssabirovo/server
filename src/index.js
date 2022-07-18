@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Box from "./box";
-import "./box.css";
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import App from "./app";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-root.render(<Box />);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);

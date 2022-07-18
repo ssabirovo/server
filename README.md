@@ -1,6 +1,6 @@
 # ---------- 18.07.22 ----------(118)
 
-## 1️⃣ Install vscode extentions
+## 1️⃣ Install vscode extentions 👍🏻
 
          ✅ React Snippets
          ✅ ES7 + React
@@ -9,19 +9,19 @@
 
 ## 2️⃣ Using Bootstrap With React
 
-         ✅ install & using
-         ✅ craete Counter component
+         ✅ install & using 👍🏻
+         ✅ craete Counter component 👍🏻
 
 ## 3️⃣ Setting Attributes
 
-         ✅ using expression
-         ✅ using style object
+         ✅ using expression 👍🏻
+         ✅ using style object 👍🏻
 
 ## 4️⃣ Props
 
-         ✅ What is props
-         ✅ using props
-         ✅ example
+         ✅ What is props 👍🏻
+         ✅ using props 👍🏻
+         ✅ example 👍🏻
          ✅ practice - 118
 
 ## 5️⃣ JSX In Depth
@@ -30,4 +30,4 @@
          ✅ Default true props
          ✅ using String Literals
 
-## 6️⃣ Coding Challange
+## 6️⃣ Deploy react app
