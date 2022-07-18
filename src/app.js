@@ -5,7 +5,7 @@ class App extends Component {
   render(root) {
     return (
       <main className='container py-2'>
-        <Counter count={0} color='success' />
+        <Counter count={20} color='success' />
         <Counter count={20} color='primary' />
         <Counter count={200} color='warning' />
       </main>
