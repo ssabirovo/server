@@ -1,33 +1,21 @@
 # ---------- 19.07.22 ----------(119)
 
-## 1️⃣ Install vscode extentions 👍🏻
+## 1️⃣ Object dot notation
 
-         ✅ React Snippets
-         ✅ ES7 + React
-         ✅ ESLINT
-         ✅ Material Icon theme
+         ✅ Object
+         ✅ Encapsulation
+         ✅ Object, Dot notation, Object.create(null)
+         ✅ Generate objects using a function
 
-## 2️⃣ Using Bootstrap With React
+## 2️⃣ Factory Functions
 
-         ✅ install & using 👍🏻
-         ✅ craete Counter component 👍🏻
+         ✅ Generate objects using a function
+         ✅ Using the prototype chain
+         ✅ Introducing the keyword that automates the hard work: new
+         ✅ The class ‘syntactic sugar’
 
-## 3️⃣ Setting Attributes
+## 3️⃣ Create Objects using Class
 
-         ✅ using expression 👍🏻
-         ✅ using style object 👍🏻
+         ✅ Inheritence
 
-## 4️⃣ Props
-
-         ✅ What is props 👍🏻
-         ✅ using props 👍🏻
-         ✅ example 👍🏻
-         ✅ practice - 118
-
-## 5️⃣ JSX In Depth
-
-         ✅ Ignored values
-         ✅ Default true props
-         ✅ using String Literals
-
-## 6️⃣ Deploy react app
+## 4️⃣ Practices
