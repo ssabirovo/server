@@ -2,16 +2,16 @@
 
 ## 1️⃣ Object dot notation
 
-         ✅ Object
-         ✅ Encapsulation
-         ✅ Object, Dot notation, Object.create(null)
-         ✅ Generate objects using a function
+         ✅ Object 👍🏻
+         ✅ Encapsulation 👍🏻
+         ✅ Object, Dot notation, Object.create({}) 👍🏻
+         ✅ Generate objects using a function 👍🏻
 
 ## 2️⃣ Factory Functions
 
-         ✅ Generate objects using a function
-         ✅ Using the prototype chain
-         ✅ Introducing the keyword that automates the hard work: new
+         ✅ Generate objects using a function 👍🏻
+         ✅ Using the prototype chain 👍🏻
+         ✅ Introducing the keyword that automates the hard work: new 👍🏻
          ✅ The class ‘syntactic sugar’
 
 ## 3️⃣ Create Objects using Class
