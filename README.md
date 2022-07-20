@@ -1,4 +1,4 @@
-# ---------- 20.07.22 ----------(120)
+# ---------- 21.07.22 ----------(121)
 
 ## 1️⃣ Rendering List
 
@@ -9,7 +9,7 @@
 
          ✅ Binding Event handlers 👍🏻
          ✅ bind with constructor 👍🏻
-         ✅ bind with arrow function
+         ✅ bind with arrow function 👍🏻
          ✅ bind render method 👍🏻
          ✅ passing arguments
 
