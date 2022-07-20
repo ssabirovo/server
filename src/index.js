@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./app";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(<App />);
+
+// function Box(name, size) {
+//   console.log(this);
+//   this.name = name;
+//   this.size = size;
+// }
+
+// Box.prototype.showData = function () {
+//   console.log(`name = ${this.name}`);
+//   console.log(`size = ${this.size}`);
+// };
+
+// const box = new Box("Box-1", 200);
+// const showData = box.showData.bind(box);
+// showData();

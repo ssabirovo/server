@@ -5,12 +5,12 @@
          ✅ Key props
          ✅ Rerendering
 
-## 2️⃣ Handling Events
+## 2️⃣ Handling Events 👍🏻
 
-         ✅ Binding Event handlers
-         ✅ bind with constructor
+         ✅ Binding Event handlers 👍🏻
+         ✅ bind with constructor 👍🏻
          ✅ bind with arrow function
-         ✅ bind render method
+         ✅ bind render method 👍🏻
          ✅ passing arguments
 
 ## 3️⃣ State
