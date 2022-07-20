@@ -1,21 +1,23 @@
-# ---------- 19.07.22 ----------(119)
+# ---------- 20.07.22 ----------(120)
 
-## 1️⃣ Object dot notation
+## 1️⃣ Rendering List
 
-         ✅ Object 👍🏻
-         ✅ Encapsulation 👍🏻
-         ✅ Object, Dot notation, Object.create({}) 👍🏻
-         ✅ Generate objects using a function 👍🏻
+         ✅ Key props
 
-## 2️⃣ Factory Functions
+## 2️⃣ Handling Events
 
-         ✅ Generate objects using a function 👍🏻
-         ✅ Using the prototype chain 👍🏻
-         ✅ Introducing the keyword that automates the hard work: new 👍🏻
-         ✅ The class ‘syntactic sugar’
+         ✅ Binding Event handlers
+         ✅ bind with constructor
+         ✅ bind with arrow function
+         ✅ bind render method
+         ✅ passing arguments
 
-## 3️⃣ Create Objects using Class
+## 3️⃣ State
 
-         ✅ Inheritence
+         ✅ state
+         ✅ setState
 
-## 4️⃣ Practices
+## 4️⃣ Create Counter list
+
+         ✅ passing data
+         ✅ passing children
