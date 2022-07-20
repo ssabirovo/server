@@ -3,6 +3,7 @@
 ## 1️⃣ Rendering List
 
          ✅ Key props
+         ✅ Rerendering
 
 ## 2️⃣ Handling Events
 
