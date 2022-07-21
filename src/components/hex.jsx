@@ -6,7 +6,7 @@ class Hex extends Component {
       <button
         className='btn p-3'
         onClick={() => this.props.onSelect(this.props.color)}
-        style={{ background: this.props.color }}
+        style={{ color: this.props.color }}
         children={this.props.color}
       />
     );

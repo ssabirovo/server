@@ -1,22 +1,40 @@
 import { Component } from "react";
 
 class Fruits extends Component {
-  fruits = [
-    { name: "Uzum", icon: "🍇" },
-    { name: "Olma", icon: "🍎" },
-    { name: "Qulupnay", icon: "🍓" },
-    { name: "Olcha", icon: "🍒" },
-  ];
+  state = {
+    fruits: [
+      { id: 1, name: "Uzum", icon: "🍇" },
+      { id: 2, name: "Olma", icon: "🍎" },
+      { id: 3, name: "Qulupnay", icon: "🍓" },
+      { id: 4, name: "Olcha", icon: "🍒" },
+    ],
+  };
+
+  handleDelete = (selectedID) => {
+    const tempFruits = this.state.fruits.filter(
+      (fruit) => fruit.id !== selectedID
+    );
+    this.setState({ fruits: tempFruits });
+    // console.log("fruits = ", this.state.fruits);
+    // console.log(`selectedID = ${selectedID}`);
+  };
 
   render() {
+    const { fruits } = this.state;
     return (
       <ul className='list-group'>
-        {this.fruits.map((fruit) => (
-          <li className='list-group-item d-flex justify-content-between'>
+        {fruits.map((fruit) => (
+          <li
+            key={fruit.id}
+            className='list-group-item d-flex justify-content-between'>
             <span>
-              {fruit.icon} - {fruit.name}
+              {fruit.id}--{fruit.icon} - {fruit.name}
             </span>
-            <button className='btn btn-sm btn-danger'>X</button>
+            <button
+              onClick={() => this.handleDelete(fruit.id)}
+              className='btn btn-sm btn-danger'>
+              X
+            </button>
           </li>
         ))}
       </ul>

@@ -3,10 +3,10 @@ import Hex from "./hex";
 import { generateColor } from "../utils/generate-color";
 import "./hexes.scss";
 
-const colors = Array(6).fill().map(generateColor);
 class Hexes extends Component {
   state = {
     bgColor: "#fff",
+    colors: Array(6).fill().map(generateColor),
   };
 
   handleSelect = (newBgColor) => {
@@ -15,21 +15,24 @@ class Hexes extends Component {
   };
 
   handleRefresh = () => {
-    this.setState({ bgColor: "#fff" });
+    const newColors = Array(6).fill().map(generateColor);
+    this.setState({ bgColor: "#fff", colors: newColors });
   };
 
   render() {
-    console.log("colors =", colors);
     return (
       <div className='wrapper' style={{ background: this.state.bgColor }}>
         <h1>{this.state.bgColor}</h1>
         <div className='hexes'>
-          {colors.map((color) => (
-            <Hex key={color} color={color} onSelect={this.handleSelect} />
+          {console.log("log-28")}
+          {this.state.colors.map((color) => (
+            <Hex color={color} onSelect={this.handleSelect} />
           ))}
+          {console.log("log-31")}
         </div>
         <button onClick={this.handleRefresh} className='btn btn-lg btn-primary'>
           Refresh
+          {console.log("log-35")}
         </button>
       </div>
     );
