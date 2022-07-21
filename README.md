@@ -11,7 +11,7 @@
          ✅ bind with constructor 👍🏻
          ✅ bind with arrow function 👍🏻
          ✅ bind render method 👍🏻
-         ✅ passing arguments
+         ✅ passing arguments 👍🏻
 
 ## 3️⃣ State
 
