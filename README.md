@@ -1,24 +1,13 @@
-# ---------- 21.07.22 ----------(121)
+# ---------- 22.07.22 ----------(122)
 
-## 1️⃣ Rendering List
+## 1️⃣ Create Counter list
 
-         ✅ Key props
-         ✅ Rerendering
+         ✅ passing data
+         ✅ passing children
 
-## 2️⃣ Handling Events 👍🏻
+## 2️⃣ Props vs State
 
-         ✅ Binding Event handlers 👍🏻
-         ✅ bind with constructor 👍🏻
-         ✅ bind with arrow function 👍🏻
-         ✅ bind render method 👍🏻
-         ✅ passing arguments 👍🏻
-
-## 3️⃣ State
-
-         ✅ state
-         ✅ setState
-
-## 4️⃣ Create Counter list
+## 3️⃣ Create Counter list
 
          ✅ passing data
          ✅ passing children

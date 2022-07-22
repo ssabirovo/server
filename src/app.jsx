@@ -41,33 +41,3 @@ class App extends Component {
 }
 
 export default App;
-
-// VD1
-<div>
-  <div>kun.uz</div>
-  <div key='arslonbek'>
-    1-arslonbek<button>x-1</button>
-  </div>
-  <div key='boburbek'>
-    2-boburbek<button>x-2</button>
-  </div>
-  <div key='jamshid'>
-    3-jamshid<button>x-3</button>
-  </div>
-  <div key='avazbek'>
-    4-avazbek<button>x-4</button>
-  </div>
-</div>;
-// VD2
-<div>
-  <div>kun.uz</div>
-  <div key='arslonbek'>
-    arslonbek<button>x-1</button>
-  </div>
-  <div key='jamshid'>
-    jamshid<button>x-3</button>
-  </div>
-  <div key='avazbek'>
-    avazbek<button>x-4</button>
-  </div>
-</div>;
