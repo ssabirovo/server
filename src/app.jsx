@@ -1,7 +1,5 @@
 import { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Fruits from "./fruits";
-// import Counter from "./counter";
 import "./assets/styles/base.scss";
 
 class App extends Component {
