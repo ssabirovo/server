@@ -4,10 +4,19 @@
 
          ✅ passing data
          ✅ passing children
+         ✅ create delete btn
 
 ## 2️⃣ Props vs State
 
-## 3️⃣ Create Counter list
+         ✅ create delete btn
+         ✅ create reset btn
+         ✅ controlled component
 
-         ✅ passing data
+## 3️⃣ Create NavBar component
+
+         ✅ single source of truth
+
+## 4️⃣ React dev tools
+
+         ✅
          ✅ passing children
