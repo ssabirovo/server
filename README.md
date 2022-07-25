@@ -1,19 +1,15 @@
-# ---------- 25.07.22 ----------(123)
+# ---------- 26.07.22 ----------(124)
 
-## 1️⃣ Create Counter list
+## 1️⃣ React dev tools
 
-         ✅ passing data 👍🏻
-         ✅ passing children 👍🏻
-         ✅ create delete btn 👍🏻
+         ✅
 
-## 2️⃣ Props vs State
+## 2️⃣
 
-         ✅ create delete btn 👍🏻
-         ✅ create reset btn 👍🏻
-         ✅ controlled component 👍🏻
+         ✅
 
-## 3️⃣ Create NavBar component
+## 3️⃣
 
-         ✅ single source of truth 👍🏻
+         ✅
 
-## 4️⃣ React dev tools
+## 4️⃣
