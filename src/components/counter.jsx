@@ -1,6 +1,9 @@
-import React, { Component } from "react";
+import { Component } from "react";
 
 class Counter extends Component {
+  state = {
+    color: "red",
+  };
   getCount = () => {
     const count = this.props.counter.value;
     return count === 0 ? "Zero" : count;

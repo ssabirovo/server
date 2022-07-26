@@ -20,8 +20,11 @@ class App extends Component {
   };
 
   handleReset = () => {
-    this.state.counters.forEach((counter) => (counter.value = 0));
-    this.setState(this.state);
+    const counters = this.state.counters.map((counter) => ({
+      ...counter,
+      value: 0,
+    }));
+    this.setState({ counters });
   };
 
   handleIncrement = (selectedID) => {
@@ -40,8 +43,25 @@ class App extends Component {
     }
   };
 
+  constructor() {
+    super();
+    console.log("App Constructor");
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log(prevState === this.state);
+    console.log("prevProps = ", prevProps);
+    console.log("prevState = ", prevState);
+  }
+
+  componentDidMount() {
+    console.log("App componentDidMount");
+  }
+
   render() {
+    console.log("App Render");
     const amount = this.state.counters.filter(({ value }) => value > 0).length;
+
     return (
       <>
         <NavBar amount={amount} />

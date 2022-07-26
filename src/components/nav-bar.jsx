@@ -1,18 +1,13 @@
-import { Component } from "react";
-
-class NavBar extends Component {
-  render() {
-    return (
-      <nav class='navbar navbar-light bg-light'>
-        <div class='container-fluid justify-content-start'>
-          <b class='navbar-brand'>Counters</b>
-          <span class='badge badge-lg bg-success'>
-            {this.props.amount || 0}
-          </span>
-        </div>
-      </nav>
-    );
-  }
-}
+// SFC -> stateless functional component
+const NavBar = ({ amount }) => {
+  return (
+    <nav className='navbar navbar-light bg-light'>
+      <div className='container-fluid justify-content-start'>
+        <b className='navbar-brand'>Counters</b>
+        <span className='badge badge-lg bg-success'>{amount || 0}</span>
+      </div>
+    </nav>
+  );
+};
 
 export default NavBar;
