@@ -12,9 +12,9 @@
          ✅ Update  -> (render, componentDidUpdate)
          ✅ Unmount -> (componentWillUnmount)
 
-## 4️⃣ Using backend Services
+## 4️⃣ Using backend Service
 
-         ✅ 
+         ✅ Courses end-point
 
 ## URLS
 
