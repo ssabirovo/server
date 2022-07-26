@@ -2,14 +2,20 @@
 
 ## 1️⃣ React dev tools
 
-         ✅
+## 2️⃣ Stateless Functional Component
 
-## 2️⃣
+         ✅ Destructuring
 
-         ✅
+## 3️⃣ React lifecycle
 
-## 3️⃣
+         ✅ Mount   -> (constructor, render, componentDidMount)
+         ✅ Update  -> (render, componentDidUpdate)
+         ✅ Unmount -> (componentWillUnmount)
 
-         ✅
+## 4️⃣ Using backend Services
 
-## 4️⃣
+         ✅ 
+
+## URLS
+
+         ✅ [React Lifecycle](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
