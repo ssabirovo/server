@@ -1,7 +1,17 @@
 import { Component } from "react";
 
 class NavBar extends Component {
+  constructor() {
+    super();
+    console.log("NavBar Constructor");
+  }
+
+  componentDidMount() {
+    console.log("NavBar Did Mount");
+  }
+
   render() {
+    console.log("NavBar Render");
     return (
       <nav className='navbar navbar-light bg-light'>
         <div className='container-fluid justify-content-start'>

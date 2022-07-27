@@ -1,8 +1,8 @@
 import { Component } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./assets/styles/base.scss";
 import NavBar from "./components/nav-bar";
 import Counters from "./components/counters";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/styles/base.scss";
 
 class App extends Component {
   state = {
@@ -48,14 +48,11 @@ class App extends Component {
     console.log("App Constructor");
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log(prevState === this.state);
-    console.log("prevProps = ", prevProps);
-    console.log("prevState = ", prevState);
-  }
-
-  componentDidMount() {
-    console.log("App componentDidMount");
+  async componentDidMount() {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await res.json();
+    console.log("data = ", data);
+    console.log("App Did Mount");
   }
 
   render() {

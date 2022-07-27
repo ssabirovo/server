@@ -4,6 +4,7 @@ class Counter extends Component {
   state = {
     color: "red",
   };
+
   getCount = () => {
     const count = this.props.counter.value;
     return count === 0 ? "Zero" : count;
@@ -14,7 +15,17 @@ class Counter extends Component {
     return className + (this.props.counter.value === 0 ? "dark" : "info");
   };
 
+  constructor(props) {
+    super(props);
+    console.log(`Counter - ${props.counter.id} Constructor`);
+  }
+
+  componentDidMount() {
+    console.log(`Counter - ${this.props.counter.id} Did Mount`);
+  }
+
   render() {
+    console.log(`Counter - ${this.props.counter.id} Render`);
     const { counter, onIncrement, onDecrement, onDelete } = this.props;
     return (
       <div className='my-2'>
