@@ -1,5 +1,0 @@
-{
-	"name": "My Express app development",
-	"dbURL": "mongodb://localhost/pdp-b-18-courses",
-	"jwt_key": "my_private_key"
-}
