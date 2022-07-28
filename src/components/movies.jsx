@@ -1,5 +1,5 @@
 import Like from "./like";
-import Paginate from "./paginate";
+import Pagination from "./pagination";
 
 const Movies = ({ movies = [], onLike }) => {
   return (
@@ -35,7 +35,7 @@ const Movies = ({ movies = [], onLike }) => {
           ))}
         </tbody>
       </table>
-      <Paginate />
+      <Pagination />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import NavBar from "./components/nav-bar";
 import Genres from "./components/genres";
 import Movies from "./components/movies";
 import Loader from "./components/loader";
+import { paginate } from "./helpers/paginate";
 
 class App extends Component {
   state = {
@@ -11,6 +12,8 @@ class App extends Component {
     movies: [],
     genres: [],
     genreID: "62e205b8a01bc724f00bf9dd",
+    currentPage: 0,
+    pageSize: 3,
   };
 
   handleSelectGenre = (newGenreID) => {
@@ -36,11 +39,13 @@ class App extends Component {
   }
 
   render() {
-    const { loading, movies, genres, genreID } = this.state;
+    const { loading, movies, genres, genreID, pageSize, currentPage } =
+      this.state;
 
     const filteredMovies = movies.filter(
       (movie) => genreID === "all" || movie.genre._id === genreID
     );
+    const paginatedMovies = paginate(filteredMovies, pageSize, currentPage);
     if (loading) return <Loader />;
 
     return (
@@ -53,7 +58,7 @@ class App extends Component {
               genreID={genreID}
               onSelect={this.handleSelectGenre}
             />
-            <Movies movies={filteredMovies} onLike={this.handleLike} />
+            <Movies movies={paginatedMovies} onLike={this.handleLike} />
           </div>
         </div>
       </>

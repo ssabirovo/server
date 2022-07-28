@@ -1,4 +1,4 @@
-const Paginate = () => {
+const Pagination = ({ items, pageSize, currentPage }) => {
   return (
     <ul className='pagination'>
       <li className='page-item'>
@@ -20,4 +20,4 @@ const Paginate = () => {
   );
 };
 
-export default Paginate;
+export default Pagination;
