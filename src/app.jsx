@@ -26,10 +26,10 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const movieRes = await fetch("http://localhost:8000/api/movies");
+    const movieRes = await fetch("http://10.10.1.60:8000/api/movies");
     const movies = await movieRes.json();
 
-    const genreRes = await fetch("http://localhost:8000/api/genres");
+    const genreRes = await fetch("http://10.10.1.60:8000/api/genres");
     const genres = await genreRes.json();
 
     setTimeout(() => {
