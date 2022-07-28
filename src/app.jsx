@@ -31,18 +31,15 @@ class App extends Component {
 
     const genreRes = await fetch("http://10.10.1.60:8000/api/genres");
     const genres = await genreRes.json();
-
-    setTimeout(() => {
-      this.setState({ loading: false, movies, genres });
-      console.log({ genres, movies });
-    }, 1000);
+    genres.unshift({ name: "All", _id: "all" });
+    setTimeout(() => this.setState({ loading: false, movies, genres }), 1000);
   }
 
   render() {
     const { loading, movies, genres, genreID } = this.state;
 
     const filteredMovies = movies.filter(
-      (movie) => movie.genre._id === genreID
+      (movie) => genreID === "all" || movie.genre._id === genreID
     );
     if (loading) return <Loader />;
 
