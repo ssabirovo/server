@@ -1,23 +1,12 @@
 import { Component } from "react";
 
 class NavBar extends Component {
-  constructor() {
-    super();
-    console.log("NavBar Constructor");
-  }
-
-  componentDidMount() {
-    console.log("NavBar Did Mount");
-  }
-
   render() {
-    console.log("NavBar Render");
     return (
       <nav className='navbar navbar-light bg-light'>
-        <div className='container-fluid justify-content-start'>
-          <b className='navbar-brand'>Counters</b>
-          <span className='badge badge-lg bg-success'>
-            {this.props.amount || 0}
+        <div className='container justify-content-start'>
+          <span style={{ fontSize: 50 }} className='navbar-brand m-0 h1'>
+            Zetflix
           </span>
         </div>
       </nav>

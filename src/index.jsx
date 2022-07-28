@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./app";
-import Users from "./challenge/users";
+import App from "./app";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<Users />);
+root.render(<App />);
