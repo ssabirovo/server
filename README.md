@@ -1,14 +1,14 @@
-# ---------- 27.07.22 ----------(125)
+# ---------- 28.07.22 ----------(126)
 
-## 1️⃣ React lifecycle
+## 1️⃣ Using backend Service
+
+         ✅ Movies backend
+
+## 2️⃣ React lifecycle
 
          ✅ Mount   -> (constructor, render, componentDidMount)
          ✅ Update  -> (render, componentDidUpdate)
          ✅ Unmount -> (componentWillUnmount)
-
-## 2️⃣ Using backend Service
-
-         ✅ Movies backend
 
 ## URLS
 

@@ -1,6 +1,6 @@
 {
   "jwtPrivateKey": "unsecureKey",
-  "db": "mongodb://localhost/pdp-b-18",
+  "db": "mongodb+srv://pdp-b-18:XOYalyu85pLuTLaj@pdp-b-18.fv3e17s.mongodb.net/?retryWrites=true&w=majority",
   "port": "8000",
   "requiresAuth": false
 }
