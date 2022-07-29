@@ -1,21 +1,21 @@
-const Pagination = ({ items, pageSize, currentPage }) => {
+import { range } from "../helpers/range";
+
+const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
+  const pageCount = Math.ceil(itemsCount / pageSize);
+  if (pageCount === 1) return null;
+
+  const pages = range(1, pageCount);
+
   return (
     <ul className='pagination'>
-      <li className='page-item'>
-        <a className='page-link' href='#'>
-          1
-        </a>
-      </li>
-      <li className='page-item'>
-        <a className='page-link' href='#'>
-          2
-        </a>
-      </li>
-      <li className='page-item active'>
-        <a className='page-link' href='#'>
-          3
-        </a>
-      </li>
+      {pages.map((page) => (
+        <li
+          key={page}
+          className={page === currentPage ? "page-item active" : "page-item"}
+          onClick={() => onPageChange(page)}>
+          <span className='page-link'>{page}</span>
+        </li>
+      ))}
     </ul>
   );
 };

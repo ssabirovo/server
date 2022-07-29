@@ -1,23 +1,29 @@
 import { Component } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/nav-bar";
 import Genres from "./components/genres";
 import Movies from "./components/movies";
 import Loader from "./components/loader";
+import Total from "./components/total";
 import { paginate } from "./helpers/paginate";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/styles/base.scss";
 
 class App extends Component {
   state = {
     loading: true,
     movies: [],
     genres: [],
-    genreID: "62e205b8a01bc724f00bf9dd",
-    currentPage: 0,
+    genreID: "all",
+    currentPage: 1,
     pageSize: 3,
   };
 
   handleSelectGenre = (newGenreID) => {
-    this.setState({ genreID: newGenreID });
+    this.setState({ genreID: newGenreID, currentPage: 1 });
+  };
+
+  handlePageChange = (newPage) => {
+    this.setState({ currentPage: newPage });
   };
 
   handleLike = (movieID) => {
@@ -29,25 +35,26 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const movieRes = await fetch("http://10.10.1.60:8000/api/movies");
+    const movieRes = await fetch("http://localhost:8000/api/movies");
     const movies = await movieRes.json();
 
-    const genreRes = await fetch("http://10.10.1.60:8000/api/genres");
+    const genreRes = await fetch("http://localhost:8000/api/genres");
     const genres = await genreRes.json();
     genres.unshift({ name: "All", _id: "all" });
     setTimeout(() => this.setState({ loading: false, movies, genres }), 1000);
   }
 
   render() {
-    const { loading, movies, genres, genreID, pageSize, currentPage } =
-      this.state;
+    if (this.state.loading) return <Loader />;
+
+    const { movies, genres, genreID, pageSize, currentPage } = this.state;
 
     const filteredMovies = movies.filter(
       (movie) => genreID === "all" || movie.genre._id === genreID
     );
     const paginatedMovies = paginate(filteredMovies, pageSize, currentPage);
-    if (loading) return <Loader />;
 
+    const total = filteredMovies.length;
     return (
       <>
         <NavBar />
@@ -58,7 +65,17 @@ class App extends Component {
               genreID={genreID}
               onSelect={this.handleSelectGenre}
             />
-            <Movies movies={paginatedMovies} onLike={this.handleLike} />
+            <div className='col'>
+              <Total total={total} />
+              <Movies
+                currentPage={currentPage}
+                pageSize={pageSize}
+                onPageChange={this.handlePageChange}
+                movies={paginatedMovies}
+                onLike={this.handleLike}
+                total={total}
+              />
+            </div>
           </div>
         </div>
       </>

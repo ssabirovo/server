@@ -1,9 +1,16 @@
 import Like from "./like";
 import Pagination from "./pagination";
 
-const Movies = ({ movies = [], onLike }) => {
+const Movies = ({
+  movies = [],
+  onLike,
+  pageSize,
+  onPageChange,
+  currentPage,
+  total,
+}) => {
   return (
-    <div className='col'>
+    <>
       <table className='table table-stripped table-hovered'>
         <thead>
           <tr>
@@ -35,8 +42,13 @@ const Movies = ({ movies = [], onLike }) => {
           ))}
         </tbody>
       </table>
-      <Pagination />
-    </div>
+      <Pagination
+        pageSize={pageSize}
+        itemsCount={total}
+        currentPage={currentPage}
+        onPageChange={onPageChange}
+      />
+    </>
   );
 };
 
