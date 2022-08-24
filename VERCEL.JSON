@@ -1,16 +1,15 @@
 {
-    "vesion": 2,
-    "builds": [
-      {
-        "src": "./index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "./routes", 
-        "dest": "/"
-      }
-    ]
-  }
-  
+  "vesion": 2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "./startup/routes.js",
+      "dest": "/"
+    }
+  ]
+}
