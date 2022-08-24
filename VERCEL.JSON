@@ -1,5 +1,5 @@
 {
-  "vesion": 2,
+  "version": 2,
   "builds": [
     {
       "src": "./index.js",
@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "./startup/routes.js",
+      "src": "/(.*)",
       "dest": "/"
     }
   ]
